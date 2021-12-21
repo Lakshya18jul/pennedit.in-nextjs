@@ -1,0 +1,20 @@
+.page-not-found {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.page-error-code {
+  color: #d32f2f;
+  font-family: 'Nunito';
+  font-size: 4rem;
+}
+
+.page-error-message {
+  font-family: 'Nunito';
+  color: #228be6;
+  font-size: 2rem;
+}

@@ -1,0 +1,300 @@
+.post-complete {
+  display: flex;
+  align-items: center;
+}
+
+.post {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 1px solid #e0dfdc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 40rem;
+  width: 32rem;
+}
+
+.post h2,
+.post p {
+  margin: 0px;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.post-header-left {
+  display: flex;
+  width: fit-content;
+}
+
+.display-category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  background-color: #e2ecf9;
+  width: fit-content;
+  height: fit-content;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  /* margin-bottom: 1rem;
+  margin-right: 10px;
+  margin-left: 10px; */
+}
+
+.display-category > span {
+  font-family: 'Nunito';
+  color: #228be6;
+  font-weight: bolder;
+  font-size: 14px;
+}
+
+.post-creator-image {
+  height: 3.2rem;
+  width: 3.2rem;
+  border-radius: 50%;
+}
+
+.post-info {
+  margin-left: 10px;
+}
+
+.post-info > a {
+  text-decoration: none;
+}
+
+.post-info h2 {
+  color: black;
+  font-family: 'Nunito';
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+.post-info-details {
+  display: flex;
+  flex-direction: column;
+  width: 17rem;
+}
+
+.post-info-details span {
+  width: fit-content;
+  font-size: 13px;
+  color: #92969a;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1150px) {
+  .post {
+    width: 26rem;
+  }
+
+  .post-info-details {
+    width: 11rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .post {
+    width: 32rem;
+  }
+
+  .post-info-details {
+    width: 17rem;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .post {
+    width: 24rem;
+  }
+
+  .post-info-details {
+    width: 10rem;
+  }
+}
+
+.post-body {
+  display: flex;
+  width: 100%;
+  overflow-wrap: break-word;
+  flex-direction: column;
+  white-space: pre-wrap;
+}
+
+.post-body > button {
+  width: fit-content;
+  font-family: 'Nunito';
+  font-size: 14px;
+  color: #228be6;
+  background-color: #e2ecf9;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 12px;
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+}
+
+.post-actions {
+  margin-top: 15px;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  border-top: 1px solid #ebebeb;
+}
+
+.post-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.post-action-icon-checked > i,
+.post-action-icon-unchecked > i {
+  margin-right: 5px;
+}
+
+.post-action-icon-unchecked {
+  color: #92969a;
+  font-family: 'Nunito';
+}
+.post-action-type {
+  color: #92969a;
+  font-family: 'Nunito';
+}
+
+@media screen and (max-width: 590px) {
+  .post-action-type {
+    font-size: 13px;
+  }
+}
+
+.post-action-icon-checked {
+  color: #228be6;
+  font-family: 'Nunito';
+}
+
+.post-action-count {
+  color: #228be6;
+  font-size: 13px;
+  font-family: 'Nunito';
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.comments-section {
+  height: 10rem;
+  width: 100%;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+/* @media screen and (max-width: 1150px) {
+  .comments-section {
+    width: 24rem;
+  }
+} */
+
+.comments-section-box {
+  width: 99%;
+  height: 100%;
+}
+
+.user-add-comment {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+}
+
+.user-add-comment > img {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+}
+
+.user-add-comment > input {
+  width: 75%;
+  border: none;
+  background-color: #e2ecf9;
+  font-family: 'Nunito';
+  resize: none;
+  border-radius: 30px;
+  padding: 5px;
+}
+
+.user-add-comment > input:focus {
+  outline: none;
+}
+
+.user-add-comment-button {
+  border: none;
+  padding: 0px;
+  font-family: 'Nunito';
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 30px;
+  font-weight: bolder;
+}
+
+.disable-addComment {
+  cursor: not-allowed;
+  background-color: #e2ecf9;
+  color: grey;
+}
+
+.enable-addComment {
+  cursor: pointer;
+  color: #228be6;
+  background-color: #e2ecf9;
+}
+
+@media screen and (max-width: 457px) {
+  .post {
+    width: 87vw;
+  }
+
+  .user-add-comment > input {
+    width: 65%;
+  }
+
+  .post-header {
+    display: flex;
+    width: 100%;
+    margin-bottom: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .post-info-details {
+    width: 11rem;
+  }
+
+  .display-category {
+    margin-top: 10px;
+  }
+
+  .post-action-type {
+    display: none;
+  }
+}

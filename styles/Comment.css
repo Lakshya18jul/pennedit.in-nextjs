@@ -1,0 +1,32 @@
+.comment {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 1px solid #ebebeb;
+}
+
+.comment > img {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.comment-body {
+  display: flex;
+  flex-direction: column;
+  width: 93%;
+  overflow-wrap: break-word;
+}
+
+.comment-body > span {
+  font-size: 13px;
+  color: #92969a;
+  font-family: 'Nunito';
+  margin-right: 2px;
+}
+
+.comment-body > p {
+  font-family: 'Nunito';
+}

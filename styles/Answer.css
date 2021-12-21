@@ -1,0 +1,25 @@
+.answer-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* background-color: #f8f9fa; */
+  /* background-color: #f1f2f2; */
+  background-color: #f3f2ef;
+  min-height: 100vh;
+}
+
+.answer-section {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.answer-content {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 457px) {
+  .answer-content {
+    margin-right: 0px;
+  }
+}

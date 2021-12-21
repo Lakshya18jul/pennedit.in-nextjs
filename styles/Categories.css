@@ -1,0 +1,256 @@
+.categories-page-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #f3f2ef;
+  min-height: 100vh;
+}
+
+.categories-section {
+  margin-top: 1rem;
+  display: flex;
+  min-height: 86vh;
+}
+
+.categories-box {
+  height: 31rem;
+  display: flex;
+  background-color: white;
+  border: 1px solid #e0dfdc;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  min-width: 19rem;
+}
+
+.categories-leftbar {
+  width: 17rem;
+  padding: 10px;
+  border-right: 1px solid lightslategray;
+}
+
+.categories-leftbar-header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 1rem;
+}
+
+.categories-leftbar-header > span {
+  font-family: 'Nunito';
+  color: #92969a;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.categories-leftbar-header-nav > span {
+  font-weight: 600;
+  font-family: 'Nunito';
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.categories-leftbar-header-nav-chosen {
+  color: #228be6;
+}
+
+.categories-leftbar-list {
+  height: 24rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.categories-rightbar {
+  padding: 10px;
+  width: 35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.categories-rightbar-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 10px;
+  margin-bottom: 1rem;
+}
+
+.rightbar-header-left {
+  display: flex;
+}
+
+.rightbar-header-left > i {
+  font-size: 1.3rem;
+  color: #92969a;
+}
+
+.rightbar-header-left > span {
+  margin-left: 1rem;
+  font-family: 'Nunito';
+  font-size: 1rem;
+  font-weight: bold;
+  color: #228be6;
+}
+
+.rightbar-header-right {
+  display: flex;
+}
+
+.rightbar-header-posts {
+  display: flex;
+  margin-right: 2rem;
+  align-items: center;
+}
+
+.rightbar-header-posts > span,
+.rightbar-header-questions > span {
+  font-weight: 600;
+  font-family: 'Nunito';
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.rightbar-header-questions {
+  display: flex;
+  align-items: center;
+}
+
+.rightbar-header-questions-count,
+.rightbar-header-posts-count {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.rightbar-header-posts-count {
+  background-color: #e4fff4;
+  margin-right: 10px;
+}
+
+.rightbar-header-posts-count > span {
+  color: #20d489;
+  font-weight: bold;
+  font-family: 'Nunito';
+}
+
+.rightbar-header-questions-count {
+  background-color: #ffeff3;
+}
+
+.rightbar-header-questions-count > span {
+  color: #f1416c;
+  font-weight: bold;
+  font-family: 'Nunito';
+}
+
+.categories-rightbar-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.no-category-selected {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 35rem;
+}
+
+.no-category-selected > span {
+  font-family: 'Nunito';
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1150px) {
+  .rightbar-header-posts {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .categories-rightbar {
+    width: 29rem;
+  }
+
+  .no-category-selected {
+    width: 29rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .home-leftSidebar-categories {
+    display: none;
+  }
+
+  .categories-page-content {
+    overflow-x: hidden;
+  }
+  .categories-rightbar-body {
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .categories-box {
+    width: 36rem;
+  }
+
+  .categories-leftbar {
+    width: 100%;
+    border: none;
+  }
+
+  .categories-rightbar {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .categories-box {
+    width: fit-content;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .categories-rightbar {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .categories-rightbar-header {
+    width: 97%;
+  }
+}
+
+@media screen and (max-width: 437px) {
+  .categories-rightbar-header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 437px) {
+  .rightbar-header-right {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 437px) {
+  .rightbar-header-left {
+    width: 95%;
+    margin-bottom: 14px;
+  }
+}

@@ -1,0 +1,237 @@
+.signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup-header {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  z-index: 999;
+}
+
+.signup-body {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  height: 34rem;
+}
+
+.signup-body-img {
+  width: 30rem;
+  height: 30rem;
+  display: flex;
+  /* align-items: center; */
+}
+
+.signup-body-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.signup-form {
+  width: fit-content;
+  height: fit-content;
+  padding-top: 1rem;
+}
+
+.signup-form-top {
+  /* padding-left: 4rem; */
+  margin-bottom: 1.5rem;
+}
+.signup-form-top p {
+  margin: 0px;
+  margin-bottom: 8px;
+}
+
+.signup-form-header {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.signup-form-starting > span {
+  font-weight: 700;
+  color: rgb(78, 75, 75);
+}
+
+.signup-form-middle {
+  /* padding-left: 4rem; */
+  margin-bottom: 1rem;
+}
+
+.signup-form-middle p {
+  margin: 0px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.signup-form-middle input {
+  border: none;
+  outline: none;
+  background-color: #e2ecf9;
+  border-radius: 5px;
+  width: 24rem;
+  padding: 8px;
+  font-size: 1rem;
+}
+
+.signup-form-name {
+  display: flex;
+  width: 25rem;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.signup-form-field {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-form-nameField {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.signup-form-nameField > input {
+  width: 10.3rem;
+}
+
+.last-signup-field {
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 930px) {
+  .signup-body-img {
+    width: 25rem;
+    height: 30rem;
+  }
+
+  .signup-form-middle input {
+    width: 20rem;
+  }
+
+  .signup-form-name {
+    width: 21rem;
+  }
+
+  .signup-form-nameField input {
+    width: 9rem;
+  }
+
+  .signup-form-header {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .signup-body-img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .signup-form-middle input {
+    width: 18rem;
+  }
+
+  .signup-form-name {
+    width: 19rem;
+  }
+
+  .signup-form-nameField input {
+    width: 8rem;
+  }
+}
+
+.signup-checkbox {
+  margin-bottom: 1rem;
+}
+
+.signup-conditions-plain {
+  font-weight: 700;
+  color: #228be6;
+  /* color: rgb(78, 75, 75); */
+}
+
+.signup-conditions-link {
+  font-weight: 700;
+  color: #228be6;
+}
+
+.signup-form-buttons > button {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-family: 'Nunito';
+}
+
+.signup-submit-button {
+  margin-right: 2rem;
+  background-color: #228be6;
+  color: white;
+  cursor: pointer;
+}
+
+.disabled-signup-button {
+  cursor: not-allowed;
+  background-color: #e2ecf9;
+  color: grey;
+}
+
+.signup-cancel-button {
+  background-color: #e2ecf9;
+  color: #228be6;
+  cursor: pointer;
+}
+
+.aboutus-pennedit-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 32rem;
+  margin-top: -1rem;
+  margin-bottom: 3rem;
+  background-color: #e2ecf9;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 550px) {
+  .aboutus-pennedit-section {
+    width: 22rem;
+  }
+}
+
+.aboutus-pennedit-section > span {
+  font-family: 'Nunito';
+}
+
+@media screen and (max-width: 400px) {
+  .aboutus-pennedit-section {
+    width: 17rem;
+  }
+}
+
+.aboutus-heading {
+  padding-bottom: 2px;
+  border-bottom: 3px solid #0b477a;
+  margin-bottom: 14px;
+  color: #0b477a;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.aboutus-content {
+  color: #228be6;
+  font-weight: bold;
+  font-size: 1.2rem;
+}

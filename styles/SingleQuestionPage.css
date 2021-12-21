@@ -1,0 +1,234 @@
+.question-page-body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* background-color: #f8f9fa; */
+  /* background-color: #f1f2f2; */
+  background-color: #f3f2ef;
+  min-height: 100vh;
+}
+
+.question-page-content {
+  margin-top: 1rem;
+  display: flex;
+}
+
+.question-page-display-question-answers {
+  width: 45rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  margin-right: 2rem;
+  /* background-color: white; */
+}
+
+.question-page-display-question {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #e0dfdc;
+  background-color: white;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 2rem;
+}
+
+.question-page-show-question {
+  width: 100%;
+  font-family: 'Nunito';
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-top: 10px;
+}
+
+.question-page-question-state {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+.answer-box {
+  width: fit-content;
+  height: fit-content;
+  background-color: #228be6;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+.answer-box span {
+  margin-right: 5px;
+  color: white;
+}
+
+.question-page-user-answer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.question-page-user-answer > textarea {
+  width: 100%;
+  height: 10rem;
+  background-color: #e2ecf9;
+  border: none;
+  border-radius: 10px;
+  padding: 7px;
+  font-size: 1rem;
+  font-family: 'Nunito';
+  resize: none;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+.question-page-user-answer > textarea:focus {
+  outline: none;
+}
+
+.question-page-user-answer-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.question-page-user-answer-buttons > button {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-family: 'Nunito';
+}
+
+.question-page-display-answers {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+
+.question-page-display-answers-header {
+  height: 2rem;
+  width: 100%;
+  border-bottom: 1px solid lightslategrey;
+  margin-bottom: 2rem;
+}
+
+.question-page-display-answers-heading-segment {
+  height: 100%;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid #228be6;
+}
+
+.display-answers-heading {
+  font-family: 'Nunito';
+  font-weight: 600;
+  color: #228be6;
+}
+
+.display-answers-count {
+  font-family: 'Nunito';
+  font-size: 13px;
+  color: #228be6;
+  font-weight: 600;
+  margin-left: 6px;
+  padding-top: 2px;
+}
+
+.question-page-display-answers-allAnswers {
+  display: flex;
+  flex-direction: column;
+}
+
+.question-page-other-questions {
+  width: 18rem;
+  display: flex;
+  flex-direction: column;
+  height: 20rem;
+}
+
+.question-page-other-questions-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid lightslategrey;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.question-page-other-questions-header > span {
+  font-family: 'Nunito';
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.question-page-display-questions {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.question-page-single-question {
+  width: 90%;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.question-page-single-question > span {
+  color: #0074cc;
+  font-family: 'Nunito';
+}
+
+.question-page-single-question > span:hover {
+  text-decoration: underline;
+  color: rgb(45, 0, 128);
+}
+
+@media screen and (max-width: 1150px) {
+  .question-page-display-question-answers {
+    width: 40rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .question-page-display-question-answers {
+    width: 45rem;
+    margin-right: 0px;
+  }
+
+  .question-page-other-questions {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .question-page-content {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .question-page-display-question-answers {
+    width: 97%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .question-page-display-answers {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .question-page-user-answer-buttons {
+    width: 90%;
+  }
+}

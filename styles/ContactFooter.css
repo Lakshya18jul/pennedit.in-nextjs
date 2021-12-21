@@ -1,0 +1,16 @@
+.contact-footer {
+  width: 100%;
+  background-color: #e2ecf9;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-footer > div {
+  font-family: 'Nunito';
+  color: #228be6;
+  font-weight: bold;
+  font-size: 14px;
+}

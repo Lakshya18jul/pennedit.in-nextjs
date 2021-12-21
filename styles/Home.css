@@ -1,0 +1,111 @@
+.home {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  /* background-color: #f8f9fa; */
+  /* background-color: #f1f2f2; */
+  background-color: #f3f2ef;
+}
+
+.home-section {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.show-loader {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-modal-box {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.post-modal-box > textarea {
+  width: 97%;
+  height: 10rem;
+  background-color: #e2ecf9;
+  border: none;
+  border-radius: 10px;
+  padding: 7px;
+  font-size: 1rem;
+  font-family: 'Nunito';
+  resize: none;
+}
+
+.post-modal-box > textarea:focus {
+  border: none;
+  outline: none;
+}
+
+.post-modal-box-buttons {
+  display: flex;
+  width: 99%;
+  justify-content: flex-end;
+}
+
+.post-modal-box-buttons > button {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-family: 'Nunito';
+}
+
+.post-modal-box-submit {
+  background-color: #228be6;
+  color: white;
+  cursor: pointer;
+}
+
+.post-modal-box-disabled-submit {
+  cursor: not-allowed;
+  background-color: #e2ecf9;
+  color: grey;
+}
+
+.post-modal-box-cancel {
+  background-color: #e2ecf9;
+  color: #228be6;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.home-categories-section {
+  width: 100%;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.home-categories-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.home-categories-header {
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 1rem;
+}
+
+.home-categories-header > span {
+  font-size: 1.5rem;
+  font-family: 'Nunito';
+}

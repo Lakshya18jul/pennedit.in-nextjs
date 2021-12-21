@@ -1,0 +1,918 @@
+.profile {
+  position: relative;
+}
+
+.profile-main-content {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+}
+
+.profile-page-body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* background-color: #f8f9fa; */
+  /* background-color: #f1f2f2; */
+  background-color: #f3f2ef;
+}
+
+.profile-page-content {
+  margin-top: 1rem;
+  display: flex;
+}
+
+.user-profile {
+  width: 50rem;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.user-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #e0dfdc;
+  background-color: white;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.user-info-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.profile-cover-photo {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-bottom: -5rem;
+  height: 12rem;
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.user-profile-photo {
+  /* border: 4px solid white; */
+  margin-left: 2rem;
+  border-radius: 50%;
+  height: 9rem;
+  width: 9rem;
+  cursor: pointer;
+}
+
+.user-info-body {
+  width: 92%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-info-details {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-profile-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: 'Nunito';
+}
+
+.user-profile-description {
+  margin-bottom: 5px;
+  font-family: 'Nunito';
+}
+
+.user-profile-location {
+  font-size: 15px;
+  color: #92969a;
+  font-family: 'Nunito';
+  margin-bottom: 5px;
+}
+
+.user-profile-joinedon {
+  font-size: 15px;
+  color: #92969a;
+  font-family: 'Nunito';
+  margin-bottom: 1rem;
+}
+
+.user-profile-followBtn {
+  width: 7rem;
+  border: none;
+  background-color: #e2ecf9;
+  color: #228be6;
+  font-family: 'Nunito';
+  font-weight: bolder;
+  font-size: 16px;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+.user-info-count {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.single-info-count {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-contactInfo {
+  width: 100%;
+  background-color: white;
+  border: 1px solid #e0dfdc;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-icon {
+  margin-right: 5px;
+}
+
+.user-contactInfo-body {
+  width: 92%;
+}
+
+.user-contactInfo-header {
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 1rem;
+}
+
+.user-contactInfo-header > span {
+  font-family: 'Nunito';
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.user-single-contactInfo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-detail {
+  width: 94%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-detail-Field {
+  font-family: 'Nunito';
+  color: black;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.contact-detail-value {
+  font-family: 'Nunito';
+  color: #228be6;
+  font-weight: 600;
+}
+
+.user-categories-section {
+  width: 100%;
+  background-color: white;
+  border: 1px solid #e0dfdc;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.user-categories-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 92%;
+}
+
+.user-categories-header {
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 1rem;
+}
+
+.user-categories-header > span {
+  font-family: 'Nunito';
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.user-categories-header > i {
+  cursor: pointer;
+}
+
+.user-profile-categories {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-height: 5rem;
+  overflow-y: auto;
+}
+
+.user-profile-single-category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  background-color: #e2ecf9;
+  width: fit-content;
+  height: fit-content;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 1rem;
+  margin-right: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.chosen-category {
+  font-family: 'Nunito';
+  color: #228be6;
+  font-weight: bolder;
+}
+
+.not-chosen-category {
+  font-family: 'Nunito';
+  color: lightgray;
+  font-weight: bolder;
+}
+
+.user-profile-activity {
+  padding-right: 20px;
+  width: 85%;
+  overflow-y: auto;
+  height: 30rem;
+  margin-top: 1rem;
+}
+
+.activity-headers {
+  width: 100%;
+  display: flex;
+  /* padding-bottom: 10px; */
+  height: 2rem;
+  border-bottom: 1px solid lightslategray;
+  margin-bottom: 2rem;
+  position: sticky;
+  top: 0px;
+  background-color: #f3f2ef;
+}
+
+.unselected-activity {
+  font-family: 'Nunito';
+  font-weight: 600;
+  margin-right: 2.5rem;
+  cursor: pointer;
+  height: 2rem;
+}
+
+.selected-activity {
+  height: 31px;
+  font-family: 'Nunito';
+  font-weight: 600;
+  margin-right: 2.5rem;
+  cursor: pointer;
+  color: #228be6;
+  border-bottom: 3px solid #228be6;
+  border-bottom-right-radius: 1px;
+  border-bottom-left-radius: 1px;
+}
+
+.no-posts-present {
+  width: 100%;
+  height: 22rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.no-posts-present > span {
+  font-family: 'Nunito';
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.no-posts-present > img {
+  height: 7rem;
+  width: 7rem;
+  margin-bottom: 10px;
+}
+
+.user-activity-length {
+  margin-left: 6px;
+  font-family: 'Nunito';
+  color: #228be6;
+  font-size: 13px;
+}
+
+.delete-content-button {
+  background-color: #d32f2f;
+  border-radius: 50%;
+  padding: 5px;
+  height: 1.5rem;
+  width: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 7px;
+}
+
+.delete-content-button > i {
+  color: white;
+}
+
+@media screen and (max-width: 1150px) {
+  .user-profile {
+    width: 40rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .user-profile {
+    width: 45rem;
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .profile-page-content {
+    width: 100%;
+    justify-content: center;
+  }
+  .user-profile {
+    width: 97%;
+  }
+
+  .user-profile-activity {
+    width: 35.5rem;
+    padding-right: 3px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .user-info-body {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+  }
+
+  .user-info-details {
+    width: auto;
+  }
+
+  .user-info-count {
+    width: auto;
+    margin-bottom: 15px;
+  }
+
+  .profile-cover-photo {
+    height: 8rem;
+    margin-bottom: -3rem;
+  }
+
+  .user-profile-photo {
+    height: 6rem;
+    width: 6rem;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .user-profile-activity {
+    width: 30rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .user-profile-activity {
+    width: 100%;
+  }
+
+  .selected-activity {
+    margin-right: 2rem;
+  }
+
+  .unselected-activity {
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .delete-content-button {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 5px;
+    height: 0px;
+    width: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 3px;
+  }
+
+  .delete-content-button > i {
+    color: #d32f2f;
+    font-size: 15px;
+    font-weight: bolder;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  border-radius: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e2ecf9;
+  border-radius: 30px;
+  width: 30px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #228be6;
+  border-radius: 30px;
+}
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+} */
+
+.show-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal-box {
+  width: 60rem;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+@media screen and (max-height: 538px) {
+  .modal-box {
+    height: 90%;
+  }
+}
+
+@media screen and (max-width: 1032px) {
+  .modal-box {
+    width: 50rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .modal-box {
+    width: 40rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .modal-box {
+    width: 30rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .modal-box {
+    width: 90%;
+  }
+}
+
+.deletion-modal-box {
+  width: 30rem;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+@media screen and (max-width: 520px) {
+  .deletion-modal-box {
+    width: 92%;
+  }
+}
+
+.modal-box-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.modal-box-heading {
+  font-size: 1.5rem;
+  font-family: 'Nunito';
+}
+
+.modal-box-close {
+  background-color: #ffeff3;
+  border: none;
+  height: 1.5rem;
+  width: 1.5rem;
+  padding: 0px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-box-close > i {
+  color: #f1416c;
+  font-weight: bold;
+}
+
+.hide-modal {
+  display: none;
+}
+
+.modal-box-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-box-coverPhoto {
+  /* border: 1px solid #e0dfdc; */
+  width: 97%;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.modal-box-coverPhoto-header {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.modal-box-coverPhoto-header > span {
+  font-family: 'Nunito';
+  font-size: 1.2rem;
+}
+
+.modal-box-coverPhoto input {
+  margin-bottom: 1rem;
+}
+
+.modal-box-coverPhoto-chooseImage {
+  width: 100%;
+}
+
+.modal-box-coverPhotoPreview {
+  width: 100%;
+  height: 10rem;
+  background-color: #f3f2ef;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 550px) {
+  .modal-box-coverPhotoPreview {
+    height: 8rem;
+  }
+}
+
+.modal-box-coverPhotoPreview > span {
+  font-family: 'Nunito';
+  font-weight: bolder;
+}
+
+.modal-box-coverPhotoPreview > img {
+  width: 100%;
+  height: 100%;
+}
+
+.modal-box-coverPhotoButton {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.modal-box-coverPhotoButton > button {
+  border: none;
+  font-family: 'Nunito';
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 0px;
+  width: 9rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 390px) {
+  .modal-box-coverPhotoButton {
+    width: 99%;
+  }
+
+  .modal-box-coverPhotoButton > button {
+    font-size: 13px;
+    width: 7rem;
+  }
+}
+
+.modal-box-coverPhoto-upload {
+  background-color: #e2ecf9;
+  color: #228be6;
+}
+
+.modal-box-coverPhoto-delete {
+  background-color: #ffeff3;
+  color: #f1416c;
+}
+
+.modal-box-profilePhotoButton {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.modal-box-profilePhotoPreview {
+  background-color: #f3f2ef;
+  height: 9rem;
+  width: 9rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 550px) {
+  .modal-box-profilePhotoPreview {
+    height: 6rem;
+    width: 6rem;
+  }
+}
+
+.modal-box-profilePhotoPreview > span {
+  font-family: 'Nunito';
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 550px) {
+  .modal-box-profilePhotoPreview > span {
+    width: 3rem;
+    font-size: 11px;
+  }
+}
+
+.modal-box-profilePhotoPreview > img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.modal-box-profilePhotoButton > button {
+  border: none;
+  font-family: 'Nunito';
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 0px;
+  width: 9rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 390px) {
+  .modal-box-profilePhotoButton {
+    width: 99%;
+  }
+
+  .modal-box-profilePhotoButton > button {
+    width: 7rem;
+    font-size: 13px;
+  }
+}
+
+.modal-box-profilePhoto-upload {
+  background-color: #e2ecf9;
+  color: #228be6;
+}
+
+.modal-box-profilePhoto-delete {
+  background-color: #ffeff3;
+  color: #f1416c;
+}
+
+.modal-box-userInfo {
+  border-bottom: 1px solid #e0dfdc;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+
+.modal-box-userInfo-header {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.modal-box-userInfo-header > span {
+  font-family: 'Nunito';
+  font-size: 1.2rem;
+}
+
+.modal-box-userInfo-fields {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.modal-box-userInfo-field {
+  width: 35rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+  .modal-box-userInfo-field {
+    width: 23rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .modal-box-userInfo-field {
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .modal-box-userInfo-fields {
+    width: 100%;
+  }
+
+  .modal-box-userInfo {
+    width: 100%;
+  }
+}
+
+.modal-box-userInfo-field > span {
+  font-family: 'Nunito';
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.modal-box-userInfo-field > input {
+  background-color: #e2ecf9;
+  border: none;
+  border-radius: 10px;
+  padding: 7px;
+  font-size: 1rem;
+  font-family: 'Nunito';
+}
+
+.modal-box-userInfo-field > input:focus {
+  border: none;
+  outline: none;
+}
+
+.modal-box-userInfo-field > textarea {
+  background-color: #e2ecf9;
+  border: none;
+  border-radius: 10px;
+  padding: 7px;
+  font-size: 1rem;
+  font-family: 'Nunito';
+  resize: none;
+}
+
+.modal-box-userInfo-field > textarea:focus {
+  border: none;
+  outline: none;
+}
+
+.modal-box-buttons {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.modal-box-buttons > button {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-family: 'Nunito';
+}
+
+.modal-box-submitButton {
+  background-color: #228be6;
+  color: white;
+  cursor: pointer;
+}
+
+.disabled-modal-box-submitButton {
+  cursor: not-allowed;
+  background-color: #e2ecf9;
+  color: grey;
+}
+
+.modal-box-cancelButton {
+  background-color: #e2ecf9;
+  color: #228be6;
+  cursor: pointer;
+}
+
+.post-delete-conformation-message {
+  width: 100%;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* background-color: #ffeff3; */
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.post-delete-conformation-message > span {
+  font-family: 'Nunito';
+  /* color: #f1416c; */
+  color: #d32f2f;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.post-delete-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.post-delete-buttons > button {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-family: 'Nunito';
+  cursor: pointer;
+}
+
+.post-deletion-confirmed {
+  background-color: #d32f2f;
+  color: white;
+  margin-right: 5px;
+}
+
+.cancel-post-deletion {
+  background-color: #e2ecf9;
+  color: #228be6;
+}

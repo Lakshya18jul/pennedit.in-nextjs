@@ -1,0 +1,78 @@
+.notifications-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #f3f2ef;
+  min-height: 100vh;
+}
+
+.notifications-section {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.single-notification {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #e0dfdc;
+  width: 32rem;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.answer-notification-image {
+  height: 2rem;
+  width: 2rem;
+  margin-right: 14px;
+}
+
+.notification-data > a {
+  text-decoration: none;
+}
+
+.notification-data > a > span {
+  font-family: 'Nunito';
+  font-weight: bold;
+  font-size: 14px;
+  color: black;
+}
+
+.notification-data > a > span:hover {
+  color: #551a8b;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1150px) {
+  .single-notification {
+    width: 26rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .single-notification {
+    width: 32rem;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .single-notification {
+    width: 24rem;
+  }
+}
+
+.notifications-content {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 457px) {
+  .notifications-content {
+    margin-right: 0px;
+  }
+
+  .single-notification {
+    width: 87vw;
+  }
+}
