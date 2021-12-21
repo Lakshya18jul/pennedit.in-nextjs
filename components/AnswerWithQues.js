@@ -109,6 +109,7 @@ function AnswerWithQues(props) {
             setQuestionContent(questionSnap.data().question_content);
             setLoading(false);
           })
+
           .catch((error) => {
             alert("Error in downloading the url");
           });
@@ -307,11 +308,11 @@ function AnswerWithQues(props) {
               <div className="answerWithQues-action" onClick={handleLike}>
                 {checkLiked() ? (
                   <span className="answerWithQues-icon-checked">
-                    <i class="far fa-thumbs-up"></i>
+                    <i className="far fa-thumbs-up"></i>
                   </span>
                 ) : (
                   <span className="answerWithQues-icon-unchecked">
-                    <i class="far fa-thumbs-up"></i>
+                    <i className="far fa-thumbs-up"></i>
                   </span>
                 )}
 
@@ -324,11 +325,11 @@ function AnswerWithQues(props) {
               <div className="answerWithQues-action" onClick={handleDislike}>
                 {checkdisLiked() ? (
                   <span className="answerWithQues-icon-checked">
-                    <i class="far fa-thumbs-down"></i>
+                    <i className="far fa-thumbs-down"></i>
                   </span>
                 ) : (
                   <span className="answerWithQues-icon-unchecked">
-                    <i class="far fa-thumbs-down"></i>
+                    <i className="far fa-thumbs-down"></i>
                   </span>
                 )}
 
@@ -348,7 +349,7 @@ function AnswerWithQues(props) {
                 props.getAnswerToDelete(answerId);
               }}
             >
-              <i class="far fa-trash-alt"></i>
+              <i className="far fa-trash-alt"></i>
             </div>
           )}
         </div>

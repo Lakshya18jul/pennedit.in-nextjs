@@ -352,11 +352,11 @@ function Post(props) {
               <div className="post-action" onClick={handleLike}>
                 {checkLiked() ? (
                   <span className="post-action-icon-checked">
-                    <i class="far fa-thumbs-up"></i>
+                    <i className="far fa-thumbs-up"></i>
                   </span>
                 ) : (
                   <span className="post-action-icon-unchecked">
-                    <i class="far fa-thumbs-up"></i>
+                    <i className="far fa-thumbs-up"></i>
                   </span>
                 )}
 
@@ -368,11 +368,11 @@ function Post(props) {
               <div className="post-action" onClick={handleDislike}>
                 {checkdisLiked() ? (
                   <span className="post-action-icon-checked">
-                    <i class="far fa-thumbs-down"></i>
+                    <i className="far fa-thumbs-down"></i>
                   </span>
                 ) : (
                   <span className="post-action-icon-unchecked">
-                    <i class="far fa-thumbs-down"></i>
+                    <i className="far fa-thumbs-down"></i>
                   </span>
                 )}
 
@@ -384,7 +384,7 @@ function Post(props) {
 
               <div className="post-action" onClick={handleComments}>
                 <span className="post-action-icon-unchecked">
-                  <i class="far fa-comment-dots"></i>
+                  <i className="far fa-comment-dots"></i>
                 </span>
                 <span className="post-action-type">Comments</span>
 
@@ -445,7 +445,7 @@ function Post(props) {
                 props.getPostToDelete(postId);
               }}
             >
-              <i class="far fa-trash-alt"></i>
+              <i className="far fa-trash-alt"></i>
             </div>
           )}
         </div>

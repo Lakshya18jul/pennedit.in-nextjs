@@ -190,9 +190,12 @@ function Header(props) {
                 value={profileName}
               />
               {profileName !== "" ? (
-                <i class="fas fa-times" onClick={() => setProfileName("")}></i>
+                <i
+                  className="fas fa-times"
+                  onClick={() => setProfileName("")}
+                ></i>
               ) : (
-                <i class="fas fa-search"></i>
+                <i className="fas fa-search"></i>
               )}
             </div>
 
@@ -204,6 +207,7 @@ function Header(props) {
                       <div
                         className="single-search"
                         onClick={() => handleSearchClick(search.doc_id)}
+                        key={search.doc_id}
                       >
                         <img
                           src={search.profilePicUrl}
@@ -227,7 +231,7 @@ function Header(props) {
               <Link href="/">
                 <a>
                   <div className="header-NavOption">
-                    <i class="fas fa-home"></i>
+                    <i className="fas fa-home"></i>
                     <span>Home</span>
                   </div>
                 </a>
@@ -236,7 +240,7 @@ function Header(props) {
               <Link href="/answer">
                 <a>
                   <div className="header-NavOption">
-                    <i class="fas fa-edit"></i>
+                    <i className="fas fa-edit"></i>
                     <span>Answer</span>
                   </div>
                 </a>
@@ -245,7 +249,7 @@ function Header(props) {
               <Link href="/categories">
                 <a>
                   <div className="header-NavOption">
-                    <i class="fas fa-list"></i>
+                    <i className="fas fa-list"></i>
                     <span>Categories</span>
                   </div>
                 </a>
@@ -259,7 +263,7 @@ function Header(props) {
                       onClick={handleNotificationClick}
                     >
                       <div className="notification-icon">
-                        <i class="fas fa-bell"></i>
+                        <i className="fas fa-bell"></i>
                         {notificationDot && (
                           <div className="notification-red-symbol"></div>
                         )}
@@ -274,7 +278,7 @@ function Header(props) {
               <Link href="/following">
                 <a>
                   <div className="header-NavOption">
-                    <i class="fas fa-paper-plane"></i>
+                    <i className="fas fa-paper-plane"></i>
                     <span>Following</span>
                   </div>
                 </a>
@@ -285,7 +289,7 @@ function Header(props) {
               className="showHamburger header-NavOption "
               onClick={() => setNavSidebar(true)}
             >
-              <i class="fas fa-bars"></i>
+              <i className="fas fa-bars"></i>
               {notificationDot && (
                 <div className="notification-red-symbol-bars"></div>
               )}

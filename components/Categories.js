@@ -65,12 +65,13 @@ function Categories(props) {
     });
   }, []);
 
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState(1000);
 
   useEffect(() => {
     function updateSize() {
       setWindowWidth(window.innerWidth);
     }
+    setWindowWidth(window.innerWidth);
     window.addEventListener("resize", updateSize);
     return () => window.removeEventListener("resize", updateSize);
   }, []);
@@ -117,7 +118,7 @@ function Categories(props) {
               rel="stylesheet"
               href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
               integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-              crossorigin="anonymous"
+              crossOrigin="anonymous"
             />
             <link
               href="https://fonts.googleapis.com/css?family=Nunito"
@@ -132,7 +133,7 @@ function Categories(props) {
               rel="stylesheet"
               href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
               integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-              crossorigin="anonymous"
+              crossOrigin="anonymous"
             />
             <link
               rel="icon"
@@ -190,6 +191,7 @@ function Categories(props) {
                           return (
                             <div
                               onClick={() => handleCategoryClick(categoryName)}
+                              key={categoryName}
                             >
                               <SingleCategory
                                 categoryName={categoryName}
@@ -201,7 +203,7 @@ function Categories(props) {
 
                       {favourites && favouritesCategoriesArray.length === 0 && (
                         <div className="no-categories">
-                          <i class="fas fa-list"></i>
+                          <i className="fas fa-list"></i>
                           <span>No categories chosen</span>
                         </div>
                       )}
@@ -211,6 +213,7 @@ function Categories(props) {
                           return (
                             <div
                               onClick={() => handleCategoryClick(categoryName)}
+                              key={categoryName}
                             >
                               <SingleCategory
                                 categoryName={categoryName}
@@ -230,7 +233,7 @@ function Categories(props) {
                     <div className="categories-rightbar">
                       <div className="categories-rightbar-header">
                         <div className="rightbar-header-left">
-                          <i class="fas fa-list"></i>
+                          <i className="fas fa-list"></i>
                           <span>{selectedCategory}</span>
                         </div>
 
@@ -337,6 +340,7 @@ function Categories(props) {
                                 onClick={() =>
                                   handleCategoryClick(categoryName)
                                 }
+                                key={categoryName}
                               >
                                 <SingleCategory
                                   categoryName={categoryName}
@@ -352,6 +356,7 @@ function Categories(props) {
                                 onClick={() =>
                                   handleCategoryClick(categoryName)
                                 }
+                                key={categoryName}
                               >
                                 <SingleCategory
                                   categoryName={categoryName}
@@ -367,7 +372,7 @@ function Categories(props) {
                       <div className="categories-rightbar-header">
                         <div className="rightbar-header-left">
                           <i
-                            class="fas fa-arrow-left"
+                            className="fas fa-arrow-left"
                             onClick={() => setCategoryList(true)}
                           ></i>
                           <span>{selectedCategory}</span>

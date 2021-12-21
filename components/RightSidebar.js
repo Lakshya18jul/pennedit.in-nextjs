@@ -50,7 +50,7 @@ function RightSidebar(props) {
 
               {categories.length === 0 && (
                 <div className="no-categories">
-                  <i class="fas fa-list"></i>
+                  <i className="fas fa-list"></i>
                   <span>No categories chosen</span>
                 </div>
               )}

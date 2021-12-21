@@ -152,7 +152,7 @@ function Feed(props) {
                     className="feed-user-profile-button"
                     onClick={handleProfileNav}
                   >
-                    <i class="fas fa-user"></i>
+                    <i className="fas fa-user"></i>
                     <span>Profile</span>
                   </div>
 
@@ -160,7 +160,7 @@ function Feed(props) {
                     className="feed-user-profile-button"
                     onClick={handleLogout}
                   >
-                    <i class="fas fa-sign-out-alt"></i>
+                    <i className="fas fa-sign-out-alt"></i>
                     <span>Logout</span>
                   </div>
                 </div>

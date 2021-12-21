@@ -142,14 +142,14 @@ function HomeLeftSidebar(props) {
               <Link href={`/profile/${getSignedDocid}`}>
                 <a>
                   <div className="left-sidebar-navigation">
-                    <i class="fas fa-user"></i>
+                    <i className="fas fa-user"></i>
                     <span className="sidebar-navOption">Profile</span>
                   </div>
                 </a>
               </Link>
 
               <div className="left-sidebar-navigation" onClick={handleLogout}>
-                <i class="fas fa-sign-out-alt"></i>
+                <i className="fas fa-sign-out-alt"></i>
                 <span className="sidebar-navOption">Logout</span>
               </div>
             </div>

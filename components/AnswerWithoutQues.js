@@ -291,11 +291,11 @@ function AnswerWithoutQues(props) {
                 <div className="answerWithQues-action" onClick={handleLike}>
                   {checkLiked() ? (
                     <span className="answerWithQues-icon-checked">
-                      <i class="far fa-thumbs-up"></i>
+                      <i className="far fa-thumbs-up"></i>
                     </span>
                   ) : (
                     <span className="answerWithQues-icon-unchecked">
-                      <i class="far fa-thumbs-up"></i>
+                      <i className="far fa-thumbs-up"></i>
                     </span>
                   )}
 
@@ -309,7 +309,7 @@ function AnswerWithoutQues(props) {
               {!currUserState && (
                 <div className="answerWithQues-action">
                   <span className="answerWithQues-icon-unchecked">
-                    <i class="far fa-thumbs-up"></i>
+                    <i className="far fa-thumbs-up"></i>
                   </span>
 
                   <span className="answerWithQues-type">Like</span>
@@ -323,11 +323,11 @@ function AnswerWithoutQues(props) {
                 <div className="answerWithQues-action" onClick={handleDislike}>
                   {checkdisLiked() ? (
                     <span className="answerWithQues-icon-checked">
-                      <i class="far fa-thumbs-down"></i>
+                      <i className="far fa-thumbs-down"></i>
                     </span>
                   ) : (
                     <span className="answerWithQues-icon-unchecked">
-                      <i class="far fa-thumbs-down"></i>
+                      <i className="far fa-thumbs-down"></i>
                     </span>
                   )}
 
@@ -342,7 +342,7 @@ function AnswerWithoutQues(props) {
               {!currUserState && (
                 <div className="answerWithQues-action">
                   <span className="answerWithQues-icon-unchecked">
-                    <i class="far fa-thumbs-down"></i>
+                    <i className="far fa-thumbs-down"></i>
                   </span>
 
                   <span className="answerWithQues-type">Dislike</span>
@@ -362,7 +362,7 @@ function AnswerWithoutQues(props) {
                 props.getAnswerToDelete(answerId);
               }}
             >
-              <i class="far fa-trash-alt"></i>
+              <i className="far fa-trash-alt"></i>
             </div>
           )}
         </div>

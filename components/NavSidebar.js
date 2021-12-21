@@ -11,7 +11,7 @@ function NavSidebar(props) {
       >
         <Link href="#">
           <a>
-            <i class="fas fa-times"></i>
+            <i className="fas fa-times"></i>
           </a>
         </Link>
       </div>
@@ -20,7 +20,7 @@ function NavSidebar(props) {
         <Link href="/">
           <a>
             <div>
-              <i class="fas fa-home"></i>
+              <i className="fas fa-home"></i>
               <span>Home</span>
             </div>
           </a>
@@ -31,7 +31,7 @@ function NavSidebar(props) {
         <Link href="/answer">
           <a>
             <div>
-              <i class="fas fa-edit"></i>
+              <i className="fas fa-edit"></i>
               <span>Answer</span>
             </div>
           </a>
@@ -42,7 +42,7 @@ function NavSidebar(props) {
         <Link href="/categories">
           <a>
             <div>
-              <i class="fas fa-list"></i>
+              <i className="fas fa-list"></i>
               <span>Categories</span>
             </div>
           </a>
@@ -53,7 +53,7 @@ function NavSidebar(props) {
         <Link href="/notifications">
           <a>
             <div onClick={props.handleNotificationClick}>
-              <i class="fas fa-bell"></i>
+              <i className="fas fa-bell"></i>
               <span>Notifications</span>
               {props.isNotificationDot && (
                 <div className="notification-red-symbol-sidebar"></div>
@@ -67,7 +67,7 @@ function NavSidebar(props) {
         <Link href="/following">
           <a>
             <div>
-              <i class="fas fa-paper-plane"></i>
+              <i className="fas fa-paper-plane"></i>
               <span>Following</span>
             </div>
           </a>

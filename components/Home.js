@@ -164,7 +164,7 @@ function Home(props) {
                 rel="stylesheet"
                 href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
                 integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-                crossorigin="anonymous"
+                crossOrigin="anonymous"
               />
               <link
                 href="https://fonts.googleapis.com/css?family=Nunito"
@@ -179,7 +179,7 @@ function Home(props) {
                 rel="stylesheet"
                 href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
                 integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-                crossorigin="anonymous"
+                crossOrigin="anonymous"
               />
               <link
                 rel="icon"
@@ -212,7 +212,7 @@ function Home(props) {
                     className="modal-box-close"
                     onClick={() => setCreatePostModal(false)}
                   >
-                    <i class="fas fa-times"></i>
+                    <i className="fas fa-times"></i>
                   </button>
                 </div>
 
@@ -237,6 +237,7 @@ function Home(props) {
                             <div
                               className="user-profile-single-category"
                               onClick={() => handlePostCategoryClick(category)}
+                              key={category}
                             >
                               <span
                                 className={
@@ -294,7 +295,7 @@ function Home(props) {
                     className="modal-box-close"
                     onClick={() => setAskQuestionModal(false)}
                   >
-                    <i class="fas fa-times"></i>
+                    <i className="fas fa-times"></i>
                   </button>
                 </div>
 
@@ -321,6 +322,7 @@ function Home(props) {
                               onClick={() =>
                                 handleQuestionCategoryClick(category)
                               }
+                              key={category}
                             >
                               <span
                                 className={
@@ -380,7 +382,7 @@ function Home(props) {
             rel="stylesheet"
             href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
             integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-            crossorigin="anonymous"
+            crossOrigin="anonymous"
           />
           <link
             href="https://fonts.googleapis.com/css?family=Nunito"
@@ -395,7 +397,7 @@ function Home(props) {
             rel="stylesheet"
             href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
             integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-            crossorigin="anonymous"
+            crossOrigin="anonymous"
           />
           <link
             rel="icon"

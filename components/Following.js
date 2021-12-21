@@ -56,7 +56,7 @@ function Following(props) {
               rel="stylesheet"
               href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
               integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-              crossorigin="anonymous"
+              crossOrigin="anonymous"
             />
             <link
               href="https://fonts.googleapis.com/css?family=Nunito"
@@ -71,7 +71,7 @@ function Following(props) {
               rel="stylesheet"
               href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
               integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-              crossorigin="anonymous"
+              crossOrigin="anonymous"
             />
             <link
               rel="icon"
@@ -95,12 +95,17 @@ function Following(props) {
                 </div>
                 {currUserState.following.length !== 0 &&
                   currUserState.following.map((followingId) => {
-                    return <FollowingProfile followingId={followingId} />;
+                    return (
+                      <FollowingProfile
+                        followingId={followingId}
+                        key={followingId}
+                      />
+                    );
                   })}
 
                 {currUserState.following.length === 0 && (
                   <div className="no-following">
-                    <i class="fas fa-paper-plane"></i>
+                    <i className="fas fa-paper-plane"></i>
                     <span>No following found</span>
                   </div>
                 )}

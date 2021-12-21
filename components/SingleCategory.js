@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 // import './SingleCategory.css';
 import {
   collection,
@@ -11,8 +11,8 @@ import {
   updateDoc,
   orderBy,
   onSnapshot,
-} from 'firebase/firestore';
-import { db, storage } from '../firebase.js';
+} from "firebase/firestore";
+import { db, storage } from "../firebase.js";
 
 function SingleCategory(props) {
   const { categoryName } = props;
@@ -21,7 +21,7 @@ function SingleCategory(props) {
   const [loading, setLoading] = useState(true);
 
   useEffect(async () => {
-    const categoryRef = doc(db, 'categories', categoryName);
+    const categoryRef = doc(db, "categories", categoryName);
     const categorySnap = await getDoc(categoryRef);
     setCategoryPosts(categorySnap.data().postIds.length);
     setCategoryQuestions(categorySnap.data().questionIds.length);
@@ -33,7 +33,7 @@ function SingleCategory(props) {
       {!loading && (
         <div className="single-category">
           <div className="category-name">
-            <i class="fas fa-list"></i>
+            <i className="fas fa-list"></i>
             <span>{categoryName}</span>
           </div>
 

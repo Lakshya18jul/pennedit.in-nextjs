@@ -206,7 +206,7 @@ function SingleQuestionPage(props) {
               rel="stylesheet"
               href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
               integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-              crossorigin="anonymous"
+              crossOrigin="anonymous"
             />
             <link
               href="https://fonts.googleapis.com/css?family=Nunito"
@@ -221,7 +221,7 @@ function SingleQuestionPage(props) {
               rel="stylesheet"
               href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
               integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-              crossorigin="anonymous"
+              crossOrigin="anonymous"
             />
             <link
               rel="icon"
@@ -248,7 +248,7 @@ function SingleQuestionPage(props) {
                         onClick={() => setTypeAnswer(true)}
                       >
                         <span>
-                          <i class="fas fa-edit"></i>
+                          <i className="fas fa-edit"></i>
                         </span>
 
                         <span>Answer</span>
@@ -258,7 +258,7 @@ function SingleQuestionPage(props) {
                     {auth.currentUser && isAnswered && (
                       <div className="answer-box">
                         <span>
-                          <i class="fas fa-edit"></i>
+                          <i className="fas fa-edit"></i>
                         </span>
 
                         <span>Answered</span>
@@ -395,7 +395,7 @@ function SingleQuestionPage(props) {
             rel="stylesheet"
             href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
             integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-            crossorigin="anonymous"
+            crossOrigin="anonymous"
           />
           <link
             href="https://fonts.googleapis.com/css?family=Nunito"
@@ -410,7 +410,7 @@ function SingleQuestionPage(props) {
             rel="stylesheet"
             href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
             integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-            crossorigin="anonymous"
+            crossOrigin="anonymous"
           />
           <link
             rel="icon"

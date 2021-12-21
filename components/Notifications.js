@@ -91,6 +91,7 @@ function Notifications(props) {
             question_content,
             isViewed: notification.data().isViewed,
             question_id,
+            notificationId: notification.id,
           };
 
           all_notifications.push(notification_content);
@@ -118,7 +119,7 @@ function Notifications(props) {
               rel="stylesheet"
               href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
               integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-              crossorigin="anonymous"
+              crossOrigin="anonymous"
             />
             <link
               href="https://fonts.googleapis.com/css?family=Nunito"
@@ -133,7 +134,7 @@ function Notifications(props) {
               rel="stylesheet"
               href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
               integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-              crossorigin="anonymous"
+              crossOrigin="anonymous"
             />
             <link
               rel="icon"
@@ -152,7 +153,10 @@ function Notifications(props) {
                 {notificationsArray.length !== 0 &&
                   notificationsArray.map((notificationData) => {
                     return (
-                      <div className="single-notification">
+                      <div
+                        className="single-notification"
+                        key={notificationData.notificationId}
+                      >
                         <img
                           src="https://firebasestorage.googleapis.com/v0/b/pennedit-d53c8.appspot.com/o/pennedit-inapp-images%2Fanswer%20icon.png?alt=media&token=44a43512-1a7b-4fc3-9e4b-ce37975ea52c"
                           alt="answer-notification"
@@ -178,7 +182,7 @@ function Notifications(props) {
 
                 {notificationsArray.length === 0 && (
                   <div className="no-following">
-                    <i class="fas fa-bell"></i>
+                    <i className="fas fa-bell"></i>
                     <span>No notification found</span>
                   </div>
                 )}

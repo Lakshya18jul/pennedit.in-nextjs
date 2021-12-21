@@ -674,7 +674,7 @@ function Profile(props) {
                 rel="stylesheet"
                 href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
                 integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-                crossorigin="anonymous"
+                crossOrigin="anonymous"
               />
               <link
                 href="https://fonts.googleapis.com/css?family=Nunito"
@@ -689,7 +689,7 @@ function Profile(props) {
                 rel="stylesheet"
                 href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
                 integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-                crossorigin="anonymous"
+                crossOrigin="anonymous"
               />
               <link
                 rel="icon"
@@ -824,7 +824,7 @@ function Profile(props) {
 
                         <div className="user-single-contactInfo">
                           <div className="contact-icon">
-                            <i class="fas fa-envelope"></i>
+                            <i className="fas fa-envelope"></i>
                           </div>
 
                           <div className="contact-detail">
@@ -1028,7 +1028,7 @@ function Profile(props) {
                     className="modal-box-close"
                     onClick={() => setEditCoverPhotoModal(false)}
                   >
-                    <i class="fas fa-times"></i>
+                    <i className="fas fa-times"></i>
                   </button>
                 </div>
 
@@ -1085,7 +1085,7 @@ function Profile(props) {
                     className="modal-box-close"
                     onClick={() => setEditProfilePhotoModal(false)}
                   >
-                    <i class="fas fa-times"></i>
+                    <i className="fas fa-times"></i>
                   </button>
                 </div>
 
@@ -1140,7 +1140,7 @@ function Profile(props) {
                     className="modal-box-close"
                     onClick={() => setEditUserInfoModal(false)}
                   >
-                    <i class="fas fa-times"></i>
+                    <i className="fas fa-times"></i>
                   </button>
                 </div>
 
@@ -1238,7 +1238,7 @@ function Profile(props) {
                     className="modal-box-close"
                     onClick={() => setPostDeleteModal(false)}
                   >
-                    <i class="fas fa-times"></i>
+                    <i className="fas fa-times"></i>
                   </button>
                 </div>
 
@@ -1283,7 +1283,7 @@ function Profile(props) {
                     className="modal-box-close"
                     onClick={() => setQuestionDeleteModal(false)}
                   >
-                    <i class="fas fa-times"></i>
+                    <i className="fas fa-times"></i>
                   </button>
                 </div>
 
@@ -1326,7 +1326,7 @@ function Profile(props) {
                     className="modal-box-close"
                     onClick={() => setAnswerDeleteModal(false)}
                   >
-                    <i class="fas fa-times"></i>
+                    <i className="fas fa-times"></i>
                   </button>
                 </div>
 
@@ -1369,7 +1369,7 @@ function Profile(props) {
               rel="stylesheet"
               href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
               integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-              crossorigin="anonymous"
+              crossOrigin="anonymous"
             />
             <link
               href="https://fonts.googleapis.com/css?family=Nunito"
@@ -1384,7 +1384,7 @@ function Profile(props) {
               rel="stylesheet"
               href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
               integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-              crossorigin="anonymous"
+              crossOrigin="anonymous"
             />
             <link
               rel="icon"

@@ -237,7 +237,7 @@ function Question(props) {
                 <Link href={`/question/${questionId}`}>
                   <div className="question-action">
                     <span>
-                      <i class="fas fa-align-left"></i>
+                      <i className="fas fa-align-left"></i>
                     </span>
                     <span>Answers</span>
                     <div className="question-answers-length">
@@ -250,7 +250,7 @@ function Question(props) {
               {answered && (
                 <div className="question-action">
                   <span>
-                    <i class="fas fa-edit"></i>
+                    <i className="fas fa-edit"></i>
                   </span>
 
                   <span>Answered</span>
@@ -263,7 +263,7 @@ function Question(props) {
                   onClick={() => setAnswerBox(true)}
                 >
                   <span>
-                    <i class="fas fa-edit"></i>
+                    <i className="fas fa-edit"></i>
                   </span>
 
                   <span>Answer</span>
@@ -300,7 +300,7 @@ function Question(props) {
                 props.getQuestionToDelete(questionId);
               }}
             >
-              <i class="far fa-trash-alt"></i>
+              <i className="far fa-trash-alt"></i>
             </div>
           )}
         </div>
