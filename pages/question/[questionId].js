@@ -19,10 +19,10 @@ import {
 function SingleQuestionPageFunction(props) {
   const router = useRouter();
   const { questionId } = router.query;
-
   return (
     <SingleQuestionPage
       questionId={questionId}
+      questionSnap={props.questionSnap}
       //   questionId={questionId}
       //   questionData={props.questionData}
       //   questionFirstAnswer={props.questionFirstAnswer}
@@ -35,12 +35,14 @@ export default SingleQuestionPageFunction;
 export async function getServerSideProps(context) {
   try {
     const params = context.params;
-    console.log(params);
+    const questionRef = doc(db, "questions", params.questionId);
+    const questionSnap = await getDoc(questionRef);
     return {
-      props: {},
+      props: {
+        questionSnap,
+      },
     };
-    // const questionRef = doc(db, "questions", params.questionId);
-    // const questionSnap = await getDoc(questionRef);
+
     // if (!questionSnap.exists()) {
     //   return {
     //     redirect: {

@@ -31,6 +31,7 @@ function SingleQuestionPage(props) {
   const questionId = props.questionId;
   //   const questionData = JSON.parse(props.questionData);
   //   const questionFirstAnswer = props.questionFirstAnswer;
+  console.log("dbwg", props.questionSnap);
 
   const [loading, setLoading] = useState(true);
   const [typeAnswer, setTypeAnswer] = useState(false);
