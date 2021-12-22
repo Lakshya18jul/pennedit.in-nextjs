@@ -35,12 +35,11 @@ export default SingleQuestionPageFunction;
 export async function getServerSideProps(context) {
   try {
     const params = context.params;
-    const questionRef = doc(db, "questions", params.questionId);
-    const questionSnap = await getDoc(questionRef);
-    // let questionSnap;
-    // const unsub = onSnapshot(doc(db, "questions", params.questionId), (doc) => {
-    //   questionSnap = doc.data();
-    // });
+    const querySnapshot = await getDocs(collection(db, "questions"));
+    querySnapshot.forEach((doc) => {
+      // doc.data() is never undefined for query doc snapshots
+    });
+
     return {
       props: {
         questionSnap: params,
