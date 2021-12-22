@@ -32,39 +32,46 @@ function SingleQuestionPageFunction(props) {
 export default SingleQuestionPageFunction;
 
 export async function getServerSideProps(context) {
-  const params = context.params;
-  const questionRef = doc(db, "questions", params.questionId);
-  const questionSnap = await getDoc(questionRef);
-  if (!questionSnap.exists()) {
+  try {
+    const params = context.params;
+    const questionRef = doc(db, "questions", params.questionId);
+    const questionSnap = await getDoc(questionRef);
+    if (!questionSnap.exists()) {
+      return {
+        redirect: {
+          permanent: false,
+          destination: "/404",
+        },
+        props: {},
+      };
+    }
+    const questionData = questionSnap.data();
+    const answersRef = collection(db, "answers");
+
+    const getAllAnswers = query(
+      answersRef,
+      where("question_id", "==", params.questionId),
+      orderBy("timestamp")
+    );
+
+    const queryAnswersSnapshot = await getDocs(getAllAnswers);
+    let questionFirstAnswer = "";
+    queryAnswersSnapshot.forEach((singleAnswer) => {
+      if (questionFirstAnswer === "") {
+        questionFirstAnswer = singleAnswer.data().answer_content;
+      }
+    });
+
     return {
-      redirect: {
-        permanent: false,
-        destination: "/404",
+      props: {
+        questionData: JSON.stringify(questionData),
+        questionFirstAnswer,
       },
+    };
+  } catch (error) {
+    console.log("Error", error);
+    return {
       props: {},
     };
   }
-  const questionData = questionSnap.data();
-  const answersRef = collection(db, "answers");
-
-  const getAllAnswers = query(
-    answersRef,
-    where("question_id", "==", params.questionId),
-    orderBy("timestamp")
-  );
-
-  const queryAnswersSnapshot = await getDocs(getAllAnswers);
-  let questionFirstAnswer = "";
-  queryAnswersSnapshot.forEach((singleAnswer) => {
-    if (questionFirstAnswer === "") {
-      questionFirstAnswer = singleAnswer.data().answer_content;
-    }
-  });
-
-  return {
-    props: {
-      questionData: JSON.stringify(questionData),
-      questionFirstAnswer,
-    },
-  };
 }
