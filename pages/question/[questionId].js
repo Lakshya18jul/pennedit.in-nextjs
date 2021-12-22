@@ -37,13 +37,13 @@ export async function getServerSideProps(context) {
     const params = context.params;
     // const questionRef = doc(db, "questions", params.questionId);
     // const questionSnap = await getDoc(questionRef);
-    let questionSnap;
-    const unsub = onSnapshot(doc(db, "questions", params.questionId), (doc) => {
-      questionSnap = doc.data();
-    });
+    // let questionSnap;
+    // const unsub = onSnapshot(doc(db, "questions", params.questionId), (doc) => {
+    //   questionSnap = doc.data();
+    // });
     return {
       props: {
-        questionSnap,
+        questionSnap: params,
       },
     };
 
