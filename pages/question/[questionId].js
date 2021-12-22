@@ -23,55 +23,56 @@ function SingleQuestionPageFunction(props) {
   return (
     <SingleQuestionPage
       questionId={questionId}
-      questionData={props.questionData}
-      questionFirstAnswer={props.questionFirstAnswer}
+      //   questionId={questionId}
+      //   questionData={props.questionData}
+      //   questionFirstAnswer={props.questionFirstAnswer}
     />
   );
 }
 
 export default SingleQuestionPageFunction;
 
-export async function getServerSideProps(context) {
-  try {
-    const params = context.params;
-    const questionRef = doc(db, "questions", params.questionId);
-    const questionSnap = await getDoc(questionRef);
-    if (!questionSnap.exists()) {
-      return {
-        redirect: {
-          permanent: false,
-          destination: "/404",
-        },
-        props: {},
-      };
-    }
-    const questionData = questionSnap.data();
-    const answersRef = collection(db, "answers");
+// export async function getServerSideProps(context) {
+//   try {
+//     const params = context.params;
+//     const questionRef = doc(db, "questions", params.questionId);
+//     const questionSnap = await getDoc(questionRef);
+//     if (!questionSnap.exists()) {
+//       return {
+//         redirect: {
+//           permanent: false,
+//           destination: "/404",
+//         },
+//         props: {},
+//       };
+//     }
+//     const questionData = questionSnap.data();
+//     const answersRef = collection(db, "answers");
 
-    const getAllAnswers = query(
-      answersRef,
-      where("question_id", "==", params.questionId),
-      orderBy("timestamp")
-    );
+//     const getAllAnswers = query(
+//       answersRef,
+//       where("question_id", "==", params.questionId),
+//       orderBy("timestamp")
+//     );
 
-    const queryAnswersSnapshot = await getDocs(getAllAnswers);
-    let questionFirstAnswer = "";
-    queryAnswersSnapshot.forEach((singleAnswer) => {
-      if (questionFirstAnswer === "") {
-        questionFirstAnswer = singleAnswer.data().answer_content;
-      }
-    });
+//     const queryAnswersSnapshot = await getDocs(getAllAnswers);
+//     let questionFirstAnswer = "";
+//     queryAnswersSnapshot.forEach((singleAnswer) => {
+//       if (questionFirstAnswer === "") {
+//         questionFirstAnswer = singleAnswer.data().answer_content;
+//       }
+//     });
 
-    return {
-      props: {
-        questionData: JSON.stringify(questionData),
-        questionFirstAnswer,
-      },
-    };
-  } catch (error) {
-    console.log("Error", error);
-    return {
-      props: {},
-    };
-  }
-}
+//     return {
+//       props: {
+//         questionData: JSON.stringify(questionData),
+//         questionFirstAnswer,
+//       },
+//     };
+//   } catch (error) {
+//     console.log("Error", error);
+//     return {
+//       props: {},
+//     };
+//   }
+// }
