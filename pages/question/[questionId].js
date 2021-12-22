@@ -1,6 +1,7 @@
 import SingleQuestionPage from "../../components/SingleQuestionPage";
 import { useRouter } from "next/router";
-import { auth, db, storage } from "../../firebase";
+import { auth, db, storage, app } from "../../firebase";
+import { getFirestore } from "firebase/firestore";
 import {
   collection,
   query,
@@ -35,7 +36,9 @@ export default SingleQuestionPageFunction;
 export async function getServerSideProps(context) {
   try {
     const params = context.params;
-    const querySnapshot = await getDocs(collection(db, "questions"));
+    const querySnapshot = await getDocs(
+      collection(getFirestore(app), "questions")
+    );
     querySnapshot.forEach((doc) => {
       // doc.data() is never undefined for query doc snapshots
     });
