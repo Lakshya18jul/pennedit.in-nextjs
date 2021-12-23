@@ -48,39 +48,6 @@ export async function getServerSideProps(context) {
         questionSnap: params,
       },
     };
-
-    // if (!questionSnap.exists()) {
-    //   return {
-    //     redirect: {
-    //       permanent: false,
-    //       destination: "/404",
-    //     },
-    //     props: {},
-    //   };
-    // }
-    // const questionData = questionSnap.data();
-    // const answersRef = collection(db, "answers");
-
-    // const getAllAnswers = query(
-    //   answersRef,
-    //   where("question_id", "==", params.questionId),
-    //   orderBy("timestamp")
-    // );
-
-    // const queryAnswersSnapshot = await getDocs(getAllAnswers);
-    // let questionFirstAnswer = "";
-    // queryAnswersSnapshot.forEach((singleAnswer) => {
-    //   if (questionFirstAnswer === "") {
-    //     questionFirstAnswer = singleAnswer.data().answer_content;
-    //   }
-    // });
-
-    // return {
-    //   props: {
-    //     questionData: JSON.stringify(questionData),
-    //     questionFirstAnswer,
-    //   },
-    // };
   } catch (error) {
     console.log("Error", error);
     return {
