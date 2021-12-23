@@ -61,10 +61,7 @@ function HomePage() {
               integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
               crossOrigin="anonymous"
             />
-            <link
-              rel="icon"
-              href="https://firebasestorage.googleapis.com/v0/b/pennedit-d53c8.appspot.com/o/pennedit-inapp-images%2Fdownload.png?alt=media&token=30917a0f-c98c-4a77-971b-3dcb02efcb54"
-            />
+            <link rel="icon" href="../public/download" />
             <meta
               name="viewport"
               content="width=device-width, initial-scale=1 , minimum-scale=1"
