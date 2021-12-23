@@ -7,6 +7,7 @@ import Home from "../components/Home";
 import { collection, query, where, getDocs } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import React from "react";
+import Head from "next/head";
 
 function HomePage() {
   const [currUserState, setCurrUserState] = useRecoilState(userState);

@@ -29,9 +29,8 @@ function SingleQuestionPage(props) {
   const [currUserState, setCurrUserState] = useRecoilState(userState);
   const router = useRouter();
   const questionId = props.questionId;
-  //   const questionData = JSON.parse(props.questionData);
-  //   const questionFirstAnswer = props.questionFirstAnswer;
-  console.log("dbwg", props.questionSnap);
+  const questionData = JSON.parse(props.questionData);
+  const questionFirstAnswer = props.questionFirstAnswer;
 
   const [loading, setLoading] = useState(true);
   const [typeAnswer, setTypeAnswer] = useState(false);
@@ -374,7 +373,7 @@ function SingleQuestionPage(props) {
           </div>
         </React.Fragment>
       )}
-      {/* {loading && (
+      {loading && (
         <Head>
           {questionFirstAnswer === "" ? (
             <meta
@@ -422,7 +421,7 @@ function SingleQuestionPage(props) {
             content="width=device-width, initial-scale=1 , minimum-scale=1"
           />
         </Head>
-      )} */}
+      )}
     </div>
   );
 }
