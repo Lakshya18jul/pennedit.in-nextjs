@@ -10,6 +10,7 @@ import { useRecoilState } from "recoil";
 import { userState } from "../atoms/userAtom.js";
 import { useRouter } from "next/router";
 import Head from "next/head";
+import Linkify from "react-linkify";
 import {
   collection,
   query,
@@ -202,6 +203,10 @@ function SingleQuestionPage(props) {
               {`(${dataToUse.answers.length})`} {dataToUse.question_content} –
               Pennedit.in
             </title>
+            <meta
+              property="og:image"
+              content="https://firebasestorage.googleapis.com/v0/b/pennedit-d53c8.appspot.com/o/pennedit-inapp-images%2Fdownload.png?alt=media&token=30917a0f-c98c-4a77-971b-3dcb02efcb54"
+            />
             <link
               rel="stylesheet"
               href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -238,7 +243,7 @@ function SingleQuestionPage(props) {
               <div className="question-page-display-question-answers">
                 <div className="question-page-display-question">
                   <div className="question-page-show-question">
-                    {dataToUse.question_content}
+                    <Linkify>{dataToUse.question_content}</Linkify>
                   </div>
 
                   <div className="question-page-question-state">
