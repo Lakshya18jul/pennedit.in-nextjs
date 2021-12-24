@@ -60,6 +60,7 @@ export async function getServerSideProps(context) {
         questionFirstAnswer = singleAnswer.data().answer_content;
       }
     });
+
     return {
       props: {
         questionData: JSON.stringify(questionData),

@@ -57,7 +57,7 @@ function Home(props) {
   const handlePublishPost = async () => {
     let curr_user_docid;
     const usersRef = collection(db, "users");
-    const q = query(usersRef, where("uid", "==", props.user.uid));
+    const q = query(usersRef, where("uid", "==", currUserState.uid));
     const querySnapshot = await getDocs(q);
     querySnapshot.forEach((doc) => {
       curr_user_docid = doc.id;

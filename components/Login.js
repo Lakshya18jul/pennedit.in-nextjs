@@ -97,19 +97,25 @@ function Login(props) {
               coverPic: {},
               profilePic: {},
             });
+            q = query(usersRef, where("uid", "==", curr_user.uid));
+            querySnapshot = await getDocs(q);
+
+            querySnapshot.forEach((doc) => {
+              setCurrUserState(doc.data());
+            });
+            location.reload();
           };
 
           addNewUser();
+        } else {
+          q = query(usersRef, where("uid", "==", curr_user.uid));
+          querySnapshot = await getDocs(q);
+
+          querySnapshot.forEach((doc) => {
+            setCurrUserState(doc.data());
+          });
+          location.reload();
         }
-
-        q = query(usersRef, where("uid", "==", curr_user.uid));
-        querySnapshot = await getDocs(q);
-
-        querySnapshot.forEach((doc) => {
-          setCurrUserState(doc.data());
-        });
-
-        location.reload();
       })
       .catch((error) => {
         const errorCode = error.code;

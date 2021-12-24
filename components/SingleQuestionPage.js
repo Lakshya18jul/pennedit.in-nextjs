@@ -30,7 +30,9 @@ function SingleQuestionPage(props) {
   const [currUserState, setCurrUserState] = useRecoilState(userState);
   const router = useRouter();
   const questionId = props.questionId;
+
   const questionData = JSON.parse(props.questionData);
+
   const questionFirstAnswer = props.questionFirstAnswer;
 
   const [loading, setLoading] = useState(true);

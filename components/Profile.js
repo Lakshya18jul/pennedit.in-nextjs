@@ -850,6 +850,7 @@ function Profile(props) {
                                 <div
                                   className="user-profile-single-category"
                                   onClick={() => handleCategoryClick(category)}
+                                  key={category}
                                 >
                                   <span
                                     className={
@@ -864,7 +865,10 @@ function Profile(props) {
                               );
                             } else {
                               return (
-                                <div className="user-profile-single-category">
+                                <div
+                                  className="user-profile-single-category"
+                                  key={category}
+                                >
                                   <span
                                     className={
                                       updatedCategories.includes(category)
