@@ -95,7 +95,7 @@ function Signup(props) {
           .then(() => {
             signOut(auth).then(() => {
               router.push("/");
-              alert("Verification mail sent to ", email);
+              alert("Verification mail sent to registered Email");
             });
           })
 
