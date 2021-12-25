@@ -16,6 +16,7 @@ import {
   deleteDoc,
   Timestamp,
 } from "firebase/firestore";
+import Head from "next/head";
 
 function SingleQuestionPageFunction(props) {
   const router = useRouter();
