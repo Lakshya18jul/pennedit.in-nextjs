@@ -54,7 +54,7 @@ function SingleQuestionPageFunction(props) {
             />
 
             <meta
-              name="og:description"
+              property="og:description"
               content={`${questionData.answers.length} Answers - ${questionFirstAnswer}`}
             />
           </>
