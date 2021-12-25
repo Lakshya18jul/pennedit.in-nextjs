@@ -27,21 +27,39 @@ function SingleQuestionPageFunction(props) {
     <>
       <Head>
         {questionFirstAnswer === "" ? (
-          <meta
-            name="description"
-            content="Pennedit is a question-and-answer website which allows users to post, ask questions and answer others based on their favourite categories and keep themselves updated regarding the latest developments in their field of interest. "
-          />
+          <>
+            <meta
+              name="description"
+              content="Pennedit is a question-and-answer website which allows users to post, ask questions and answer others based on their favourite categories and keep themselves updated regarding the latest developments in their field of interest. "
+            />
+            <meta
+              property="og:description"
+              content="Pennedit is a question-and-answer website which allows users to post, ask questions and answer others based on their favourite categories and keep themselves updated regarding the latest developments in their field of interest. "
+            />
+          </>
         ) : (
-          <meta
-            name="description"
-            content={`${questionData.answers.length} Answers - ${questionFirstAnswer}`}
-          />
+          <>
+            <meta
+              name="description"
+              content={`${questionData.answers.length} Answers - ${questionFirstAnswer}`}
+            />
+
+            <meta
+              name="og:description"
+              content={`${questionData.answers.length} Answers - ${questionFirstAnswer}`}
+            />
+          </>
         )}
 
         <title>
           {`(${questionData.answers.length})`} {questionData.question_content} –
           Pennedit.in
         </title>
+        <meta
+          property="og:title"
+          content={`(${questionData.answers.length}) {questionData.question_content} –
+          Pennedit.in`}
+        />
         <link
           rel="stylesheet"
           href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
