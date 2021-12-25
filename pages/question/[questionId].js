@@ -57,7 +57,7 @@ function SingleQuestionPageFunction(props) {
         </title>
         <meta
           property="og:title"
-          content={`(${questionData.answers.length}) {questionData.question_content} –
+          content={`(${questionData.answers.length}) ${questionData.question_content} –
           Pennedit.in`}
         />
         <link
