@@ -88,8 +88,7 @@ function Header(props) {
   }, [profileName]);
 
   const handleSearchClick = (doc_id) => {
-    router.push(`/profile/${doc_id}`);
-    window.location.reload();
+    window.location = `/profile/${doc_id}`;
   };
 
   useEffect(async () => {

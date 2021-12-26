@@ -175,8 +175,7 @@ function SingleQuestionPage(props) {
   };
 
   const handleQuestionClick = (question_id) => {
-    router.push(`/question/${question_id}`);
-    window.location.reload();
+    window.location = `/question/${question_id}`;
   };
 
   const handleUnsignedClick = () => {
