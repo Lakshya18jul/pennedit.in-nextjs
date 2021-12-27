@@ -360,6 +360,7 @@ function SingleQuestionPage(props) {
                         <div
                           className="question-page-single-question"
                           onClick={() => handleQuestionClick(question_id)}
+                          key={question_id}
                         >
                           <QuestionText
                             questionId={question_id}
