@@ -45,7 +45,6 @@
   height: 4rem;
   width: 4rem;
   border-radius: 50%;
-  object-fit: contain;
 }
 
 .feed-user-profile-body {
@@ -83,14 +82,14 @@
 }
 
 .feed-user-profile-username {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-size: 15px;
   font-weight: bold;
   margin-bottom: 3px;
 }
 
 .feed-user-profile-description {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-size: 13px;
   color: #92969a;
   white-space: nowrap;
@@ -125,7 +124,7 @@
 }
 
 .feed-user-profile-button span {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   color: #92969a;
 }
 
@@ -142,14 +141,14 @@
 }
 
 .feed-user-count-num {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-weight: bold;
   color: #228be6;
   font-size: 1.5rem;
 }
 
 .feed-user-count-type {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   color: #92969a;
 }
 
@@ -181,7 +180,7 @@
 }
 
 .feed-addPost > span {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   color: #228be6;
   font-weight: bolder;
 }
@@ -208,7 +207,7 @@
 }
 
 .feed-addQuestion > span {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   color: #228be6;
   font-weight: bolder;
 }
