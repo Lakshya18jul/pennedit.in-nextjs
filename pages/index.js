@@ -35,6 +35,17 @@ function HomePage() {
       {returnLogin ? (
         <React.Fragment>
           <Head>
+            <meta property="og:url" content="https://www.pennedit.in" />
+            <meta property="og:type" content="website" />
+            <meta property="og:title" content="Pennedit" />
+            <meta
+              property="og:image"
+              content="https://firebasestorage.googleapis.com/v0/b/pennedit-d53c8.appspot.com/o/pennedit-inapp-images%2Fdownload.png?alt=media&token=30917a0f-c98c-4a77-971b-3dcb02efcb54"
+            />
+            <meta
+              property="og:description"
+              content="Pennedit is a question-and-answer website which allows users to post, ask questions and answer others based on their favourite categories and keep themselves updated regarding the latest developments in their field of interest. "
+            />
             <meta
               name="description"
               content="Pennedit is a question-and-answer website which allows users to post, ask questions and answer others based on their favourite categories and keep themselves updated regarding the latest developments in their field of interest. "
@@ -73,6 +84,17 @@ function HomePage() {
         <React.Fragment>
           {" "}
           <Head>
+            <meta property="og:url" content="https://www.pennedit.in" />
+            <meta property="og:type" content="website" />
+            <meta property="og:title" content="Pennedit" />
+            <meta
+              property="og:image"
+              content="https://firebasestorage.googleapis.com/v0/b/pennedit-d53c8.appspot.com/o/pennedit-inapp-images%2Fdownload.png?alt=media&token=30917a0f-c98c-4a77-971b-3dcb02efcb54"
+            />
+            <meta
+              property="og:description"
+              content="Pennedit is a question-and-answer website which allows users to post, ask questions and answer others based on their favourite categories and keep themselves updated regarding the latest developments in their field of interest. "
+            />
             <meta
               name="description"
               content="Pennedit is a question-and-answer website which allows users to post, ask questions and answer others based on their favourite categories and keep themselves updated regarding the latest developments in their field of interest. "
