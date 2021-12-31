@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 // import "./Login.css";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Router from "next/router";
 import { useRecoilState } from "recoil";
 import { userState } from "../atoms/userAtom";
 import { auth, db, provider } from "../firebase.js";
@@ -12,6 +13,7 @@ import {
   GoogleAuthProvider,
   signOut,
   sendPasswordResetEmail,
+  reload,
 } from "firebase/auth";
 
 import { collection, query, where, getDocs, addDoc } from "firebase/firestore";
@@ -24,6 +26,7 @@ function Login(props) {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const { previous_link } = props;
 
   const check_fields = () => {
     if (email == "" || password == "") {
@@ -50,8 +53,11 @@ function Login(props) {
           querySnapshot.forEach((doc) => {
             setCurrUserState(doc.data());
           });
-
-          location.reload();
+          if (previous_link === "") {
+            location.reload();
+          } else {
+            router.push(previous_link);
+          }
         } else {
           signOut(auth).then(() => {
             router.push("/");
@@ -103,7 +109,11 @@ function Login(props) {
             querySnapshot.forEach((doc) => {
               setCurrUserState(doc.data());
             });
-            location.reload();
+            if (previous_link === "") {
+              location.reload();
+            } else {
+              router.push(previous_link);
+            }
           };
 
           addNewUser();
@@ -114,7 +124,11 @@ function Login(props) {
           querySnapshot.forEach((doc) => {
             setCurrUserState(doc.data());
           });
-          location.reload();
+          if (previous_link === "") {
+            location.reload();
+          } else {
+            router.push(previous_link);
+          }
         }
       })
       .catch((error) => {
@@ -122,7 +136,7 @@ function Login(props) {
         const errorMessage = error.message;
         const email = error.email;
         const credential = GoogleAuthProvider.credentialFromError(error);
-        alert("Error during google signin ");
+        alert("Error during google Sign In ");
       });
   };
 

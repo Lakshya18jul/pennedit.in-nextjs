@@ -99,7 +99,6 @@ function Feed(props) {
   const handleLogout = () => {
     signOut(auth)
       .then(() => {
-        setCurrUserState(null);
         router.push("/");
       })
       .catch((error) => {

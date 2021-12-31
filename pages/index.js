@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 import React from "react";
 import Head from "next/head";
 
-function HomePage() {
+function HomePage(props) {
   const [currUserState, setCurrUserState] = useRecoilState(userState);
   const [returnLogin, setReturnLogin] = useState(false);
 
@@ -78,7 +78,7 @@ function HomePage() {
               content="width=device-width, initial-scale=1 , minimum-scale=1"
             />
           </Head>
-          <Login />{" "}
+          <Login previous_link={props.previous_link} />{" "}
         </React.Fragment>
       ) : (
         <React.Fragment>
@@ -138,3 +138,24 @@ function HomePage() {
 }
 
 export default HomePage;
+
+export async function getServerSideProps(context) {
+  const link = context.req.headers.referer;
+  if (
+    link !== undefined &&
+    link.length >= 31 &&
+    link.substr(0, 30) === "http://localhost:3000/question"
+  ) {
+    return {
+      props: {
+        previous_link: link,
+      },
+    };
+  }
+
+  return {
+    props: {
+      previous_link: "",
+    },
+  };
+}

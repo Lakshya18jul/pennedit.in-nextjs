@@ -77,7 +77,6 @@ function HomeLeftSidebar(props) {
   const handleLogout = () => {
     signOut(auth)
       .then(() => {
-        setCurrUserState(null);
         router.push("/");
       })
       .catch((error) => {
