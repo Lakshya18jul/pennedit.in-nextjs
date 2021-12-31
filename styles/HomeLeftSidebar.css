@@ -75,13 +75,13 @@
 .user-name {
   font-size: 18px;
   font-weight: bold;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   margin-bottom: 10px;
   text-align: center;
 }
 
 .user-description {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   color: #92969a;
   text-align: center;
 }
@@ -105,13 +105,13 @@
 .count-num {
   font-size: 2rem;
   font-weight: bold;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   color: #228be6;
 }
 
 .count-category {
   font-size: 1rem;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   color: #92969a;
 }
 
@@ -130,6 +130,8 @@
   padding-left: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
+  display: flex;
+  align-items: center;
 }
 
 .left-sidebar-navigation:hover {
@@ -141,15 +143,14 @@
   color: #228be6;
 }
 
-.left-sidebar-navigation i {
+.left-sidebar-navigation img {
   width: 16px;
-  font-size: 1.2rem;
-  color: #228be6;
+  height: 16px;
 }
 
 .sidebar-navOption {
   font-size: 1rem;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   color: #92969a;
   margin-left: 1rem;
 }

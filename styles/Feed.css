@@ -118,8 +118,9 @@
   background-color: #e2ecf9;
 }
 
-.feed-user-profile-button i {
-  color: #228be6;
+.feed-user-profile-button img {
+  height: 15px;
+  width: 15px;
   margin-right: 8px;
 }
 

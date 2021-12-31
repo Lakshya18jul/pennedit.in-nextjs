@@ -151,7 +151,10 @@ function Feed(props) {
                     className="feed-user-profile-button"
                     onClick={handleProfileNav}
                   >
-                    <i className="fas fa-user"></i>
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/pennedit-nextjs.appspot.com/o/pennedit-inapp-images%2Fuser-profile-icon.png?alt=media&token=625aed7b-f9a1-4d1c-a624-492227bdde2b"
+                      alt="user-profile-icon-feedtop"
+                    />
                     <span>Profile</span>
                   </div>
 
@@ -159,7 +162,10 @@ function Feed(props) {
                     className="feed-user-profile-button"
                     onClick={handleLogout}
                   >
-                    <i className="fas fa-sign-out-alt"></i>
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/pennedit-nextjs.appspot.com/o/pennedit-inapp-images%2Flogout%20icon.png?alt=media&token=533940c8-453a-4b8f-b636-c1091cb63658"
+                      alt="signout-icon-feedtop"
+                    />
                     <span>Logout</span>
                   </div>
                 </div>

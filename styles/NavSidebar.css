@@ -5,9 +5,10 @@
   justify-content: flex-end;
 }
 
-.navbar-toggle > a > i {
+.navbar-toggle > a > img {
   color: #d32f2f;
-  font-size: 1.2rem;
+  height: 1.2rem;
+  width: 1.2rem;
 }
 
 .nav-menu-items {
@@ -44,14 +45,14 @@ li > a > div {
   align-items: center;
 }
 
-li > a > div > i {
+li > a > div > img {
   margin-right: 1.2rem;
-  font-size: 1.2rem;
-  color: #228be6;
+  height: 1.2rem;
+  width: 1.2rem;
 }
 
 li > a > div > span {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-weight: 600;
   color: #92969a;
 }

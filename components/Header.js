@@ -230,7 +230,10 @@ function Header(props) {
               <Link href="/">
                 <a>
                   <div className="header-NavOption">
-                    <i className="fas fa-home"></i>
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/pennedit-nextjs.appspot.com/o/pennedit-inapp-images%2Fhome%20picblue.png?alt=media&token=c4111571-691c-4570-9d8e-e8114072ce26"
+                      alt="home-pic-header"
+                    />
                     <span>Home</span>
                   </div>
                 </a>
@@ -239,7 +242,10 @@ function Header(props) {
               <Link href="/answer">
                 <a>
                   <div className="header-NavOption">
-                    <i className="fas fa-edit"></i>
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/pennedit-nextjs.appspot.com/o/pennedit-inapp-images%2Fpen%20paper%20blue.png?alt=media&token=c3e17c6e-96e7-493b-951e-0ceed57c3b8c"
+                      alt="answer-icon-header"
+                    />
                     <span>Answer</span>
                   </div>
                 </a>
@@ -248,7 +254,10 @@ function Header(props) {
               <Link href="/categories">
                 <a>
                   <div className="header-NavOption">
-                    <i className="fas fa-list"></i>
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/pennedit-nextjs.appspot.com/o/pennedit-inapp-images%2Flist%20icon%20blue.png?alt=media&token=e049d0ba-4a65-47f0-be20-271527db0c7a"
+                      alt="category-icon-header"
+                    />
                     <span>Categories</span>
                   </div>
                 </a>
@@ -262,7 +271,10 @@ function Header(props) {
                       onClick={handleNotificationClick}
                     >
                       <div className="notification-icon">
-                        <i className="fas fa-bell"></i>
+                        <img
+                          src="https://firebasestorage.googleapis.com/v0/b/pennedit-nextjs.appspot.com/o/pennedit-inapp-images%2Fbell%20icon%20blue.png?alt=media&token=97337c4a-5823-40e3-be2c-e54f88ea5543"
+                          alt="bell-icon-header"
+                        />
                         {notificationDot && (
                           <div className="notification-red-symbol"></div>
                         )}
@@ -277,7 +289,10 @@ function Header(props) {
               <Link href="/following">
                 <a>
                   <div className="header-NavOption">
-                    <i className="fas fa-paper-plane"></i>
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/pennedit-nextjs.appspot.com/o/pennedit-inapp-images%2Fpaperplane%20icon%20blue.png?alt=media&token=fa9f5480-63dd-4ba7-bd65-b741eb08ad21"
+                      alt="plane-icon-header"
+                    />
                     <span>Following</span>
                   </div>
                 </a>
@@ -288,7 +303,10 @@ function Header(props) {
               className="showHamburger header-NavOption "
               onClick={() => setNavSidebar(true)}
             >
-              <i className="fas fa-bars"></i>
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/pennedit-nextjs.appspot.com/o/pennedit-inapp-images%2Fhamburger-icon.png?alt=media&token=fc42088d-2177-48c2-952d-6d05537e0fd3"
+                alt="hamburger-icon-header"
+              />
               {notificationDot && (
                 <div className="notification-red-symbol-bars"></div>
               )}
