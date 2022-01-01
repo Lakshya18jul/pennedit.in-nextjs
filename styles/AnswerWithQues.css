@@ -43,7 +43,7 @@
 
 .answerWithQues-info > a > h2 {
   color: black;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-weight: bolder;
   margin: 0px;
   font-size: 16px;
@@ -105,9 +105,10 @@
   }
 }
 
-.answerWithQues-info-details i {
-  font-size: 7px;
-}
+/* .answerWithQues-info-details img {
+  height: 15px;
+  width: 15px;
+} */
 
 .answerWithQues-body {
   display: flex;
@@ -119,7 +120,7 @@
 
 .answerWithQues-body > button {
   width: fit-content;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-size: 14px;
   color: #228be6;
   background-color: #e2ecf9;
@@ -135,7 +136,7 @@
 
 .answerWithQues-body h3 {
   margin-top: 0px;
-  font-family: 'Nunito';
+  font-family: "Nunito";
 }
 
 .answerWithQues-actions {
@@ -156,7 +157,13 @@
 .answerWithQues-icon-unchecked,
 .answerWithQues-type {
   color: #92969a;
-  font-family: 'Nunito';
+  font-family: "Nunito";
+}
+
+.answerWithQues-icon-unchecked img,
+.answerWithQues-icon-checked img {
+  height: 15px;
+  width: 15px;
 }
 
 .answerWithQues-icon-unchecked,
@@ -166,13 +173,13 @@
 
 .answerWithQues-icon-checked {
   color: #228be6;
-  font-family: 'Nunito';
+  font-family: "Nunito";
 }
 
 .answerWithQues-count {
   color: #228be6;
   font-size: 13px;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   margin-left: 5px;
   font-weight: bold;
 }

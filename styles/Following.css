@@ -30,7 +30,7 @@
 }
 
 .following-count-display > span {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-weight: bold;
   color: #228be6;
 }
@@ -59,15 +59,15 @@
   align-items: center;
 }
 
-.no-following > i {
-  font-size: 3rem;
+.no-following > img {
+  width: 3rem;
+  height: 3rem;
   margin-bottom: 10px;
-  color: #92969a;
 }
 
 .no-following > span {
   color: #92969a;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-weight: bold;
   font-size: 1.2rem;
 }

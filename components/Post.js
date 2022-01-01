@@ -352,11 +352,17 @@ function Post(props) {
               <div className="post-action" onClick={handleLike}>
                 {checkLiked() ? (
                   <span className="post-action-icon-checked">
-                    <i className="far fa-thumbs-up"></i>
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/pennedit-nextjs.appspot.com/o/pennedit-inapp-images%2Flike%20icon%20blue.png?alt=media&token=1832caff-d1a3-4e5d-a697-0c8a56e86e71"
+                      alt="like-grey"
+                    />
                   </span>
                 ) : (
                   <span className="post-action-icon-unchecked">
-                    <i className="far fa-thumbs-up"></i>
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/pennedit-nextjs.appspot.com/o/pennedit-inapp-images%2Flike%20icon%20grey.png?alt=media&token=0648d219-b40e-4b3f-b8b5-bd226d66e29a"
+                      alt="like-grey"
+                    />
                   </span>
                 )}
 
@@ -368,11 +374,17 @@ function Post(props) {
               <div className="post-action" onClick={handleDislike}>
                 {checkdisLiked() ? (
                   <span className="post-action-icon-checked">
-                    <i className="far fa-thumbs-down"></i>
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/pennedit-nextjs.appspot.com/o/pennedit-inapp-images%2Fdislike%20blue.png?alt=media&token=cf2e5eea-0538-4c95-8af2-897db8c98092"
+                      alt="dislike-grey"
+                    />
                   </span>
                 ) : (
                   <span className="post-action-icon-unchecked">
-                    <i className="far fa-thumbs-down"></i>
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/pennedit-nextjs.appspot.com/o/pennedit-inapp-images%2Fdislike%20grey.png?alt=media&token=205466b8-7830-4b09-b91b-25aceb37b1b8"
+                      alt="dislike-grey"
+                    />
                   </span>
                 )}
 
@@ -384,7 +396,10 @@ function Post(props) {
 
               <div className="post-action" onClick={handleComments}>
                 <span className="post-action-icon-unchecked">
-                  <i className="far fa-comment-dots"></i>
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/pennedit-nextjs.appspot.com/o/pennedit-inapp-images%2Fcomments%20grey.png?alt=media&token=d37980fa-f76d-4a4f-a04c-7a7674270330"
+                    alt="comments-dots"
+                  />
                 </span>
                 <span className="post-action-type">Comments</span>
 

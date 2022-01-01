@@ -35,7 +35,7 @@
 .category-posts > span {
   color: #20d489;
   font-weight: bold;
-  font-family: 'Nunito';
+  font-family: "Nunito";
 }
 
 .category-questions {
@@ -45,17 +45,22 @@
 .category-questions > span {
   color: #f1416c;
   font-weight: bold;
-  font-family: 'Nunito';
+  font-family: "Nunito";
 }
 
-.category-name > i {
-  font-size: 1.3rem;
-  color: #92969a;
+.category-name {
+  display: flex;
+  align-items: center;
+}
+
+.category-name > img {
+  height: 1.3rem;
+  width: 1.3rem;
 }
 
 .category-name > span {
   margin-left: 1rem;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-size: 14px;
   font-weight: bold;
   color: #228be6;

@@ -52,7 +52,7 @@
 
 .question-info h2 {
   color: black;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-weight: bolder;
   font-size: 16px;
 }
@@ -117,7 +117,7 @@
 
 .question-body > h3 {
   width: 100%;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   margin-bottom: 10px;
 }
 
@@ -129,7 +129,7 @@
   border-radius: 10px;
   padding: 7px;
   font-size: 1rem;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   resize: none;
 }
 
@@ -157,20 +157,25 @@
   cursor: pointer;
 }
 
-.question-action i {
+.question-action img {
   margin-right: 5px;
+}
+
+.question-action img {
+  height: 15px;
+  width: 15px;
 }
 
 .question-action span {
   color: #92969a;
-  font-family: 'Nunito';
+  font-family: "Nunito";
 }
 
 .question-answers-length {
   color: #228be6;
   font-weight: 600;
   margin-left: 6px;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-size: 13px;
   padding-top: 2px;
 }
@@ -180,7 +185,7 @@
   border: none;
   border-radius: 10px;
   font-weight: bold;
-  font-family: 'Nunito';
+  font-family: "Nunito";
 }
 
 .submit-answer {

@@ -182,7 +182,10 @@ function Notifications(props) {
 
                 {notificationsArray.length === 0 && (
                   <div className="no-following">
-                    <i className="fas fa-bell"></i>
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/pennedit-nextjs.appspot.com/o/pennedit-inapp-images%2Fbell%20icon%20grey.png?alt=media&token=82254be7-b675-4aac-bbe5-6e5d94339678"
+                      alt="no-notifications-icon"
+                    />
                     <span>No notification found</span>
                   </div>
                 )}

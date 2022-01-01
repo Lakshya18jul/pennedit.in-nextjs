@@ -38,7 +38,7 @@
 }
 
 .categories-leftbar-header > span {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   color: #92969a;
   font-weight: bold;
   font-size: 1.2rem;
@@ -47,7 +47,7 @@
 
 .categories-leftbar-header-nav > span {
   font-weight: 600;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   margin-right: 20px;
   cursor: pointer;
 }
@@ -84,14 +84,14 @@
   display: flex;
 }
 
-.rightbar-header-left > i {
-  font-size: 1.3rem;
-  color: #92969a;
+.rightbar-header-left > img {
+  height: 1.3rem;
+  width: 1.3rem;
 }
 
 .rightbar-header-left > span {
   margin-left: 1rem;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-size: 1rem;
   font-weight: bold;
   color: #228be6;
@@ -110,7 +110,7 @@
 .rightbar-header-posts > span,
 .rightbar-header-questions > span {
   font-weight: 600;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   margin-right: 10px;
   cursor: pointer;
 }
@@ -138,7 +138,7 @@
 .rightbar-header-posts-count > span {
   color: #20d489;
   font-weight: bold;
-  font-family: 'Nunito';
+  font-family: "Nunito";
 }
 
 .rightbar-header-questions-count {
@@ -148,7 +148,7 @@
 .rightbar-header-questions-count > span {
   color: #f1416c;
   font-weight: bold;
-  font-family: 'Nunito';
+  font-family: "Nunito";
 }
 
 .categories-rightbar-body {
@@ -168,7 +168,7 @@
 }
 
 .no-category-selected > span {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-weight: bolder;
   font-size: 1.5rem;
 }

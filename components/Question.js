@@ -237,7 +237,10 @@ function Question(props) {
                 <Link href={`/question/${questionId}`}>
                   <div className="question-action">
                     <span>
-                      <i className="fas fa-align-left"></i>
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/pennedit-nextjs.appspot.com/o/pennedit-inapp-images%2Fanswers%20grey.png?alt=media&token=20a6c207-29cf-4e7e-a5a5-0839324f2cf1"
+                        alt="answers-icon"
+                      />
                     </span>
                     <span>Answers</span>
                     <div className="question-answers-length">
@@ -250,7 +253,10 @@ function Question(props) {
               {answered && (
                 <div className="question-action">
                   <span>
-                    <i className="fas fa-edit"></i>
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/pennedit-nextjs.appspot.com/o/pennedit-inapp-images%2Fpen%20paper%20grey.png?alt=media&token=11b3df91-a400-4bda-b626-281f5389be0e"
+                      alt="answer-icon"
+                    />
                   </span>
 
                   <span>Answered</span>
@@ -263,7 +269,10 @@ function Question(props) {
                   onClick={() => setAnswerBox(true)}
                 >
                   <span>
-                    <i className="fas fa-edit"></i>
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/pennedit-nextjs.appspot.com/o/pennedit-inapp-images%2Fpen%20paper%20grey.png?alt=media&token=11b3df91-a400-4bda-b626-281f5389be0e"
+                      alt="answer-icon"
+                    />
                   </span>
 
                   <span>Answer</span>

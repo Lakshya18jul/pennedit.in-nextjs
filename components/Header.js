@@ -304,7 +304,7 @@ function Header(props) {
               onClick={() => setNavSidebar(true)}
             >
               <img
-                src="https://firebasestorage.googleapis.com/v0/b/pennedit-nextjs.appspot.com/o/pennedit-inapp-images%2Fhamburger-icon.png?alt=media&token=fc42088d-2177-48c2-952d-6d05537e0fd3"
+                src="https://firebasestorage.googleapis.com/v0/b/pennedit-nextjs.appspot.com/o/pennedit-inapp-images%2Fhamburger-icon%20blue.png?alt=media&token=6c149c0e-755d-43bf-bed8-191374b35305"
                 alt="hamburger-icon-header"
               />
               {notificationDot && (

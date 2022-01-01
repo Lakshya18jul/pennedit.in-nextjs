@@ -52,7 +52,7 @@
 }
 
 .display-category > span {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   color: #228be6;
   font-weight: bolder;
   font-size: 14px;
@@ -74,7 +74,7 @@
 
 .post-info h2 {
   color: black;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-weight: bolder;
   font-size: 16px;
 }
@@ -135,7 +135,7 @@
 
 .post-body > button {
   width: fit-content;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-size: 14px;
   color: #228be6;
   background-color: #e2ecf9;
@@ -165,18 +165,20 @@
   cursor: pointer;
 }
 
-.post-action-icon-checked > i,
-.post-action-icon-unchecked > i {
+.post-action-icon-checked > img,
+.post-action-icon-unchecked > img {
   margin-right: 5px;
+  height: 15px;
+  width: 15px;
 }
 
 .post-action-icon-unchecked {
   color: #92969a;
-  font-family: 'Nunito';
+  font-family: "Nunito";
 }
 .post-action-type {
   color: #92969a;
-  font-family: 'Nunito';
+  font-family: "Nunito";
 }
 
 @media screen and (max-width: 590px) {
@@ -187,13 +189,13 @@
 
 .post-action-icon-checked {
   color: #228be6;
-  font-family: 'Nunito';
+  font-family: "Nunito";
 }
 
 .post-action-count {
   color: #228be6;
   font-size: 13px;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   margin-left: 5px;
   font-weight: bold;
 }
@@ -234,7 +236,7 @@
   width: 75%;
   border: none;
   background-color: #e2ecf9;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   resize: none;
   border-radius: 30px;
   padding: 5px;
@@ -247,7 +249,7 @@
 .user-add-comment-button {
   border: none;
   padding: 0px;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 5px;

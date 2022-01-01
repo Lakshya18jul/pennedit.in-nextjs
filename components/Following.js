@@ -105,7 +105,10 @@ function Following(props) {
 
                 {currUserState.following.length === 0 && (
                   <div className="no-following">
-                    <i className="fas fa-paper-plane"></i>
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/pennedit-nextjs.appspot.com/o/pennedit-inapp-images%2Fpaperplane%20icon%20grey.png?alt=media&token=fdbd0df3-c810-4c6e-a0bf-c6a3d7f0aa72"
+                      alt="no-following"
+                    />
                     <span>No following found</span>
                   </div>
                 )}
