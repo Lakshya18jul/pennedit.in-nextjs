@@ -143,8 +143,8 @@ export async function getServerSideProps(context) {
   const link = context.req.headers.referer;
   if (
     link !== undefined &&
-    link.length >= 31 &&
-    link.substr(0, 30) === "http://localhost:3000/question"
+    link.length >= 29 &&
+    link.substr(0, 28) === "https://pennedit.in/question"
   ) {
     return {
       props: {
