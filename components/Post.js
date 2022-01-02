@@ -460,7 +460,16 @@ function Post(props) {
                 props.getPostToDelete(postId);
               }}
             >
-              <i className="far fa-trash-alt"></i>
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/pennedit-nextjs.appspot.com/o/pennedit-inapp-images%2Fdustbin%20delete.png?alt=media&token=5b55d252-4c8e-4e60-9b76-98dd1ff748e9"
+                alt="delete-icon"
+                className="delete-button-white"
+              />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/pennedit-nextjs.appspot.com/o/pennedit-inapp-images%2Fdustbin%20red.png?alt=media&token=2af3d167-3f05-4fed-9359-865b3479b65d"
+                alt="delete-icon"
+                className="delete-button-red"
+              />
             </div>
           )}
         </div>

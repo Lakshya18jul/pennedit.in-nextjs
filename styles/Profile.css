@@ -83,25 +83,25 @@
 .user-profile-name {
   font-size: 1.5rem;
   font-weight: 600;
-  font-family: 'Nunito';
+  font-family: "Nunito";
 }
 
 .user-profile-description {
   margin-bottom: 5px;
-  font-family: 'Nunito';
+  font-family: "Nunito";
 }
 
 .user-profile-location {
   font-size: 15px;
   color: #92969a;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   margin-bottom: 5px;
 }
 
 .user-profile-joinedon {
   font-size: 15px;
   color: #92969a;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   margin-bottom: 1rem;
 }
 
@@ -110,7 +110,7 @@
   border: none;
   background-color: #e2ecf9;
   color: #228be6;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-weight: bolder;
   font-size: 16px;
   border-radius: 10px;
@@ -163,7 +163,7 @@
 }
 
 .user-contactInfo-header > span {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-weight: 600;
   font-size: 1.5rem;
 }
@@ -181,14 +181,14 @@
 }
 
 .contact-detail-Field {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   color: black;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
 .contact-detail-value {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   color: #228be6;
   font-weight: 600;
 }
@@ -220,7 +220,7 @@
 }
 
 .user-categories-header > span {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-weight: 600;
   font-size: 1.5rem;
 }
@@ -257,13 +257,13 @@
 }
 
 .chosen-category {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   color: #228be6;
   font-weight: bolder;
 }
 
 .not-chosen-category {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   color: lightgray;
   font-weight: bolder;
 }
@@ -289,7 +289,7 @@
 }
 
 .unselected-activity {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-weight: 600;
   margin-right: 2.5rem;
   cursor: pointer;
@@ -298,7 +298,7 @@
 
 .selected-activity {
   height: 31px;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-weight: 600;
   margin-right: 2.5rem;
   cursor: pointer;
@@ -318,7 +318,7 @@
 }
 
 .no-posts-present > span {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-weight: bold;
   font-size: 1.2rem;
 }
@@ -331,7 +331,7 @@
 
 .user-activity-length {
   margin-left: 6px;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   color: #228be6;
   font-size: 13px;
 }
@@ -349,8 +349,13 @@
   margin-left: 7px;
 }
 
-.delete-content-button > i {
-  color: white;
+.delete-button-white {
+  height: 15px;
+  width: 15px;
+}
+
+.delete-button-red {
+  display: none;
 }
 
 @media screen and (max-width: 1150px) {
@@ -441,10 +446,14 @@
     margin-left: 3px;
   }
 
-  .delete-content-button > i {
-    color: #d32f2f;
-    font-size: 15px;
-    font-weight: bolder;
+  .delete-button-red {
+    display: inline;
+    height: 15px;
+    width: 15px;
+  }
+
+  .delete-button-white {
+    display: none;
   }
 }
 
@@ -551,7 +560,7 @@
 
 .modal-box-heading {
   font-size: 1.5rem;
-  font-family: 'Nunito';
+  font-family: "Nunito";
 }
 
 .modal-box-close {
@@ -597,7 +606,7 @@
 }
 
 .modal-box-coverPhoto-header > span {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-size: 1.2rem;
 }
 
@@ -627,7 +636,7 @@
 }
 
 .modal-box-coverPhotoPreview > span {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-weight: bolder;
 }
 
@@ -645,7 +654,7 @@
 
 .modal-box-coverPhotoButton > button {
   border: none;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   border-radius: 10px;
   font-size: 17px;
   font-weight: bold;
@@ -702,7 +711,7 @@
 }
 
 .modal-box-profilePhotoPreview > span {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-weight: bolder;
 }
 
@@ -721,7 +730,7 @@
 
 .modal-box-profilePhotoButton > button {
   border: none;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   border-radius: 10px;
   font-size: 17px;
   font-weight: bold;
@@ -767,7 +776,7 @@
 }
 
 .modal-box-userInfo-header > span {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-size: 1.2rem;
 }
 
@@ -807,7 +816,7 @@
 }
 
 .modal-box-userInfo-field > span {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-size: 1rem;
   font-weight: 600;
 }
@@ -818,7 +827,7 @@
   border-radius: 10px;
   padding: 7px;
   font-size: 1rem;
-  font-family: 'Nunito';
+  font-family: "Nunito";
 }
 
 .modal-box-userInfo-field > input:focus {
@@ -832,7 +841,7 @@
   border-radius: 10px;
   padding: 7px;
   font-size: 1rem;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   resize: none;
 }
 
@@ -852,7 +861,7 @@
   border: none;
   border-radius: 10px;
   font-weight: bold;
-  font-family: 'Nunito';
+  font-family: "Nunito";
 }
 
 .modal-box-submitButton {
@@ -884,7 +893,7 @@
 }
 
 .post-delete-conformation-message > span {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   /* color: #f1416c; */
   color: #d32f2f;
   font-weight: bold;
@@ -902,7 +911,7 @@
   border: none;
   border-radius: 10px;
   font-weight: bold;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   cursor: pointer;
 }
 

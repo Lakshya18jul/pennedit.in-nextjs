@@ -189,12 +189,16 @@ function Header(props) {
                 value={profileName}
               />
               {profileName !== "" ? (
-                <i
-                  className="fas fa-times"
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/pennedit-nextjs.appspot.com/o/pennedit-inapp-images%2Fclose%20button%20grey.png?alt=media&token=e71d8a0c-5e85-4686-a277-fe8e30d37954"
+                  alt="close-button"
                   onClick={() => setProfileName("")}
-                ></i>
+                />
               ) : (
-                <i className="fas fa-search"></i>
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/pennedit-nextjs.appspot.com/o/pennedit-inapp-images%2Fsearch%20icon.png?alt=media&token=e4647f10-ea4f-410a-a74e-c7d1db76c86b"
+                  alt="search-icon"
+                />
               )}
             </div>
 
