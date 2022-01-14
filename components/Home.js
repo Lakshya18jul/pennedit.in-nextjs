@@ -8,6 +8,12 @@ import { useRecoilState } from "recoil";
 import { userState } from "../atoms/userAtom";
 import Head from "next/head";
 
+import dynamic from "next/dynamic";
+import { EditorState } from "draft-js";
+import { convertFromRaw, convertToRaw } from "draft-js";
+import draftToHtml from "draftjs-to-html";
+import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
+
 import {
   collection,
   query,
@@ -20,6 +26,13 @@ import {
   serverTimestamp,
   Timestamp,
 } from "firebase/firestore";
+
+const Editor = dynamic(
+  () => import("react-draft-wysiwyg").then((module) => module.Editor),
+  {
+    ssr: false,
+  }
+);
 
 function Home(props) {
   const [loading, setLoading] = useState(true);
@@ -53,6 +66,15 @@ function Home(props) {
 
   const [postText, setPostText] = useState("");
   const [questionText, setQuestionText] = useState("");
+
+  const [editorPostState, setEditorPostState] = useState(
+    EditorState.createEmpty()
+  );
+
+  const onEditorPostStateChange = (editorPostState) => {
+    setEditorPostState(editorPostState);
+    setPostText(draftToHtml(convertToRaw(editorPostState.getCurrentContent())));
+  };
 
   const handlePublishPost = async () => {
     let curr_user_docid;
@@ -96,6 +118,7 @@ function Home(props) {
     addNewPost();
     setPostText("");
     setPostCategory("");
+    setEditorPostState(EditorState.createEmpty());
     setCreatePostModal(false);
   };
 
@@ -218,11 +241,17 @@ function Home(props) {
 
                 <div className="modal-box-body">
                   <div className="post-modal-box">
-                    <textarea
-                      placeholder="Pen down your thoughts to the world....."
-                      value={postText}
-                      onChange={(e) => setPostText(e.target.value)}
-                    ></textarea>
+                    <Editor
+                      editorState={editorPostState}
+                      onEditorStateChange={onEditorPostStateChange}
+                      toolbar={{
+                        options: ["inline", "list"],
+                        inline: {
+                          options: ["bold", "italic", "underline"],
+                        },
+                      }}
+                      className="editor-typing"
+                    />
                   </div>
 
                   <div className="home-categories-section">
@@ -256,7 +285,7 @@ function Home(props) {
                   </div>
 
                   <div className="post-modal-box-buttons">
-                    {postText === "" || postCategory === "" ? (
+                    {postText.length <= 8 || postCategory === "" ? (
                       <button className="post-modal-box-disabled-submit">
                         Pen My Post
                       </button>
@@ -273,6 +302,7 @@ function Home(props) {
                       className="post-modal-box-cancel"
                       onClick={() => {
                         setPostText("");
+                        setEditorPostState(EditorState.createEmpty());
                         setPostCategory("");
                       }}
                     >

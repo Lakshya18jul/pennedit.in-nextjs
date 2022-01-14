@@ -23,6 +23,7 @@ import "../styles/RightSidebar.css";
 import "../styles/Signup.css";
 import "../styles/SingleCategory.css";
 import "../styles/SingleQuestionPage.css";
+import "../styles/textEditor.css";
 
 function MyApp({ Component, pageProps }) {
   return (

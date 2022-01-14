@@ -271,9 +271,14 @@ function Post(props) {
   const compressText = (content) => {
     if (content.length > 400) {
       const new_string = content.substr(0, 400);
-      return new_string;
+      return (
+        <>
+          <p dangerouslySetInnerHTML={{ __html: new_string }} />
+          <span>...</span>
+        </>
+      );
     } else {
-      return content;
+      return <p dangerouslySetInnerHTML={{ __html: content }} />;
     }
   };
 
@@ -314,17 +319,10 @@ function Post(props) {
               </div>
             </div>
             <div className="post-body">
-              {isReadLess && (
-                <Linkify>
-                  <p>
-                    {compressText(post_content)}
-                    {post_content.length > 400 && <span>...</span>}
-                  </p>
-                </Linkify>
-              )}
+              {isReadLess && <Linkify>{compressText(post_content)}</Linkify>}
               {isReadMore && (
                 <Linkify>
-                  <p>{post_content}</p>
+                  <p dangerouslySetInnerHTML={{ __html: post_content }} />
                 </Linkify>
               )}
               {isReadLess && post_content.length > 400 && (

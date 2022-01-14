@@ -1,0 +1,16 @@
+.editor-full {
+  height: auto;
+}
+.rdw-editor-toolbar {
+  margin-bottom: 0px !important;
+}
+
+.rdw-editor-main {
+  background-color: #e2ecf9;
+  height: 10rem !important;
+  padding-left: 5px;
+}
+
+.rdw-editor-wrapper {
+  width: 100%;
+}
