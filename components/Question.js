@@ -25,6 +25,19 @@ import {
 } from "firebase/storage";
 // import "./Question.css";
 
+import dynamic from "next/dynamic";
+import { EditorState } from "draft-js";
+import { convertFromRaw, convertToRaw } from "draft-js";
+import draftToHtml from "draftjs-to-html";
+import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
+
+const Editor = dynamic(
+  () => import("react-draft-wysiwyg").then((module) => module.Editor),
+  {
+    ssr: false,
+  }
+);
+
 function Question(props) {
   const [dataToUse, setDataToUse] = useState({});
   const { questionId } = props;
@@ -180,7 +193,19 @@ function Question(props) {
 
     addNewAnswer();
     setAnswerText("");
+    setEditorAnswerState(EditorState.createEmpty());
     setAnswerBox(false);
+  };
+
+  const [editorAnswerState, setEditorAnswerState] = useState(
+    EditorState.createEmpty()
+  );
+
+  const onEditorAnswerStateChange = (editorAnswerState) => {
+    setEditorAnswerState(editorAnswerState);
+    setAnswerText(
+      draftToHtml(convertToRaw(editorAnswerState.getCurrentContent()))
+    );
   };
 
   return (
@@ -225,10 +250,17 @@ function Question(props) {
               </Linkify>
 
               {answerBox && (
-                <textarea
-                  placeholder="Type your answer"
-                  onChange={(e) => setAnswerText(e.target.value)}
-                ></textarea>
+                <Editor
+                  editorState={editorAnswerState}
+                  onEditorStateChange={onEditorAnswerStateChange}
+                  toolbar={{
+                    options: ["inline", "list"],
+                    inline: {
+                      options: ["bold", "italic", "underline"],
+                    },
+                  }}
+                  className="editor-typing"
+                />
               )}
             </div>
 
@@ -279,13 +311,13 @@ function Question(props) {
                 </div>
               )}
 
-              {answerBox && answerText && (
+              {answerBox && answerText.length > 8 && (
                 <button className="submit-answer" onClick={handlePublishAnswer}>
                   Pen My Answer
                 </button>
               )}
 
-              {answerBox && !answerText && (
+              {answerBox && answerText.length <= 8 && (
                 <button className="submit-answer-disabled">
                   Pen My Answer
                 </button>
@@ -294,7 +326,11 @@ function Question(props) {
               {answerBox && (
                 <button
                   className="cancel-answer"
-                  onClick={() => setAnswerBox(false)}
+                  onClick={() => {
+                    setAnswerBox(false);
+                    setAnswerText("");
+                    setEditorAnswerState(EditorState.createEmpty());
+                  }}
                 >
                   Cancel
                 </button>

@@ -37,7 +37,7 @@
 
 .question-page-show-question {
   width: 100%;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-size: 1.3rem;
   font-weight: bold;
   margin-bottom: 1rem;
@@ -86,7 +86,7 @@
   border-radius: 10px;
   padding: 7px;
   font-size: 1rem;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   resize: none;
   box-sizing: border-box;
   margin-bottom: 15px;
@@ -100,6 +100,7 @@
   display: flex;
   justify-content: space-between;
   width: 60%;
+  margin-top: 10px;
 }
 
 .question-page-user-answer-buttons > button {
@@ -107,7 +108,7 @@
   border: none;
   border-radius: 10px;
   font-weight: bold;
-  font-family: 'Nunito';
+  font-family: "Nunito";
 }
 
 .question-page-display-answers {
@@ -132,13 +133,13 @@
 }
 
 .display-answers-heading {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-weight: 600;
   color: #228be6;
 }
 
 .display-answers-count {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-size: 13px;
   color: #228be6;
   font-weight: 600;
@@ -166,7 +167,7 @@
 }
 
 .question-page-other-questions-header > span {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-weight: bold;
   font-size: 1.2rem;
 }
@@ -185,7 +186,7 @@
 
 .question-page-single-question > span {
   color: #0074cc;
-  font-family: 'Nunito';
+  font-family: "Nunito";
 }
 
 .question-page-single-question > span:hover {

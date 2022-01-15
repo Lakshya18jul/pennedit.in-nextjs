@@ -1344,7 +1344,7 @@ function Profile(props) {
                       className="post-deletion-confirmed"
                       onClick={() => handleDeleteAnswer(answerToDelete)}
                     >
-                      Delete Question
+                      Delete Answer
                     </button>
 
                     <button

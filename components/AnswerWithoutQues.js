@@ -46,9 +46,14 @@ function AnswerWithoutQues(props) {
   const compressText = (content) => {
     if (content.length > 400) {
       const new_string = content.substr(0, 400);
-      return new_string;
+      return (
+        <>
+          <p dangerouslySetInnerHTML={{ __html: new_string }} />
+          <span>...</span>
+        </>
+      );
     } else {
-      return content;
+      return <p dangerouslySetInnerHTML={{ __html: content }} />;
     }
   };
 
@@ -251,17 +256,10 @@ function AnswerWithoutQues(props) {
             </div>
 
             <div className="answerWithQues-body">
-              {isReadLess && (
-                <Linkify>
-                  <p>
-                    {compressText(answer_content)}
-                    {answer_content.length > 400 && <span>...</span>}
-                  </p>
-                </Linkify>
-              )}
+              {isReadLess && <Linkify>{compressText(answer_content)}</Linkify>}
               {isReadMore && (
                 <Linkify>
-                  <p>{answer_content}</p>
+                  <p dangerouslySetInnerHTML={{ __html: answer_content }} />
                 </Linkify>
               )}
               {isReadLess && answer_content.length > 400 && (

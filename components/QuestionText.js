@@ -17,9 +17,22 @@ function QuestionText(props) {
     }
   }, []);
 
+  const compressQuestion = (questionText) => {
+    if (questionText.length > 65) {
+      const new_string = questionText.substr(0, 65);
+      return new_string;
+    } else {
+      return questionText;
+    }
+  };
+
   return (
     <React.Fragment>
-      {!loading && <span>{questionContent}</span>}
+      {!loading && questionContent.length > 65 ? (
+        <span>{compressQuestion(questionContent)}...</span>
+      ) : (
+        <span>{questionContent}</span>
+      )}
     </React.Fragment>
   );
 }

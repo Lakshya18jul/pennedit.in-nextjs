@@ -26,6 +26,19 @@ import {
   Timestamp,
 } from "firebase/firestore";
 
+import dynamic from "next/dynamic";
+import { EditorState } from "draft-js";
+import { convertFromRaw, convertToRaw } from "draft-js";
+import draftToHtml from "draftjs-to-html";
+import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
+
+const Editor = dynamic(
+  () => import("react-draft-wysiwyg").then((module) => module.Editor),
+  {
+    ssr: false,
+  }
+);
+
 function SingleQuestionPage(props) {
   const [currUserState, setCurrUserState] = useRecoilState(userState);
   const router = useRouter();
@@ -171,7 +184,19 @@ function SingleQuestionPage(props) {
 
     addNewAnswer();
     setAnswerText("");
+    setEditorAnswerState(EditorState.createEmpty());
     setTypeAnswer(false);
+  };
+
+  const [editorAnswerState, setEditorAnswerState] = useState(
+    EditorState.createEmpty()
+  );
+
+  const onEditorAnswerStateChange = (editorAnswerState) => {
+    setEditorAnswerState(editorAnswerState);
+    setAnswerText(
+      draftToHtml(convertToRaw(editorAnswerState.getCurrentContent()))
+    );
   };
 
   const handleQuestionClick = (question_id) => {
@@ -282,13 +307,19 @@ function SingleQuestionPage(props) {
 
                   {typeAnswer && (
                     <div className="question-page-user-answer">
-                      <textarea
-                        placeholder="Type your answer..."
-                        onChange={(e) => setAnswerText(e.target.value)}
-                        value={answerText}
-                      ></textarea>
+                      <Editor
+                        editorState={editorAnswerState}
+                        onEditorStateChange={onEditorAnswerStateChange}
+                        toolbar={{
+                          options: ["inline", "list"],
+                          inline: {
+                            options: ["bold", "italic", "underline"],
+                          },
+                        }}
+                        className="editor-typing"
+                      />
                       <div className="question-page-user-answer-buttons">
-                        {answerText === "" ? (
+                        {answerText.length <= 8 ? (
                           <button className="submit-answer-disabled">
                             Pen My Answer
                           </button>
@@ -306,6 +337,7 @@ function SingleQuestionPage(props) {
                           onClick={() => {
                             setTypeAnswer(false);
                             setAnswerText("");
+                            setEditorAnswerState(EditorState.createEmpty());
                           }}
                         >
                           Cancel
