@@ -136,7 +136,7 @@ function Login(props) {
         const errorMessage = error.message;
         const email = error.email;
         const credential = GoogleAuthProvider.credentialFromError(error);
-        alert("Error during google Sign In ");
+        alert(error);
       });
   };
 
